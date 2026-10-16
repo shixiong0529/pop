@@ -1,5 +1,6 @@
 import catalogJson from "@/content/generated/catalog.json";
-import { IPS } from "@/content/ips";
+import { IPS as MANUAL_IPS } from "@/content/ips";
+import { autoIPContent } from "@/content/ips/auto";
 import type { Catalog, ImageAsset, IPContent, Product, Series, SeriesCategory } from "./types";
 import { seriesName, seriesTime } from "./naming";
 
@@ -7,6 +8,13 @@ import { seriesName, seriesTime } from "./naming";
  * 图鉴数据访问层（仅在服务端组件中使用，避免把完整数据打进客户端包）。
  */
 const catalog = catalogJson as unknown as Catalog;
+
+// 手写的 IP 在前；自动收录的新 IP 排在最后，有了手写内容后自动让位
+const manualSlugs = new Set(MANUAL_IPS.map((ip) => ip.slug));
+const IPS: IPContent[] = [
+  ...MANUAL_IPS,
+  ...(catalog.autoIps ?? []).filter((a) => !manualSlugs.has(a.slug)).map(autoIPContent),
+];
 
 // 单品系列的产品名使用整理后的系列专名（官方完整标题保留在系列上）
 {

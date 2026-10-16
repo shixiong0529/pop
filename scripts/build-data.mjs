@@ -6,7 +6,10 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import sharp from 'sharp';
-import { IP_LIST as IP_MAP, CAP } from './ips.mjs';
+import { CAP, IP_LIST, allIPs, readAutoIPs } from './ips.mjs';
+
+// 手写清单 + 自动登记的新 IP
+const IP_MAP = allIPs();
 
 const RAW_FILE = 'data/official/raw.json';
 const IMG_DIR = 'public/images/catalog';
@@ -85,6 +88,41 @@ function parseReleaseAt(text, date) {
   if (t && /pm/i.test(t[3])) h += 12;
   const offset = pacificDST(y, m, d) ? 7 : 8;
   return Date.UTC(y, m - 1, d, h + offset, t ? Number(t[2]) : 0) / 1000;
+}
+
+// ───────── 自动收录 IP 的主题色 ─────────
+function hexToHsl(hex) {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const l = (max + min) / 2;
+  if (max === min) return [0, 0, l];
+  const d = max - min;
+  const s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+  const h = max === r ? (g - b) / d + (g < b ? 6 : 0) : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  return [h * 60, s, l];
+}
+
+function hslToHex(h, s, l) {
+  const k = (n) => (n + h / 30) % 12;
+  const a = s * Math.min(l, 1 - l);
+  const f = (n) => l - a * Math.max(-1, Math.min(k(n) - 3, Math.min(9 - k(n), 1)));
+  return '#' + [f(0), f(8), f(4)].map((v) => Math.round(v * 255).toString(16).padStart(2, '0')).join('');
+}
+
+/** 由产品图主色推算一套柔和的展厅配色 */
+function themeFrom(hex = '#c9c4bd') {
+  let [h, s] = hexToHsl(hex);
+  // 主色接近灰色时没有可靠的色相，改用暖灰
+  if (s < 0.08) [h, s] = [30, 0.12];
+  const sat = Math.min(Math.max(s, 0.2), 0.6);
+  return {
+    bg: hslToHex(h, Math.min(sat, 0.42), 0.93),
+    surface: hslToHex(h, Math.min(sat, 0.35), 0.975),
+    accent: hslToHex(h, Math.max(sat, 0.45), 0.4),
+    ink: hslToHex(h, 0.3, 0.13),
+    glow: [hslToHex(h, 0.65, 0.82), hslToHex((h + 40) % 360, 0.55, 0.85)],
+  };
 }
 
 function fields(desc) {
@@ -332,10 +370,32 @@ async function main() {
     };
   }
 
+  // 自动收录的 IP：展厅内容全部取自官网数据，网站上标注为示例数据
+  const manualOfficial = new Set(IP_LIST.map(([o]) => o));
+  const autoIpsOut = readAutoIPs()
+    .filter((a) => !manualOfficial.has(a.official))
+    .map((a) => {
+      const c = collections[a.official];
+      const first = seriesOut.find((s) => s.ip === a.slug);
+      return {
+        slug: a.slug,
+        officialSlug: a.official,
+        name: c?.name ?? a.name,
+        addedAt: a.addedAt,
+        theme: themeFrom(first?.cover.color ?? collectionsOut[a.slug]?.banner?.color),
+      };
+    });
+
   await fs.mkdir(path.dirname(OUT), { recursive: true });
   await fs.writeFile(
     OUT,
-    JSON.stringify({ generatedAt: fetchedAt, series: seriesOut, products: productsOut, collections: collectionsOut }),
+    JSON.stringify({
+      generatedAt: fetchedAt,
+      series: seriesOut,
+      products: productsOut,
+      collections: collectionsOut,
+      autoIps: autoIpsOut,
+    }),
   );
   console.log(`✓ 系列 ${seriesOut.length} 个，产品 ${productsOut.length} 款 → ${OUT}`);
 
@@ -355,13 +415,19 @@ async function main() {
       console.log(`⚠ 有 ${lost.length} 个系列没能保留（通常是缺少图片或商品详情）：`);
       for (const s of lost) console.log(`  - [${ipName(s.ip)}] ${s.title}`);
     }
-    if (!added.length && !addedProducts.length && !lost.length) console.log('内容没有变化。');
+    const prevAuto = new Set((prev.autoIps ?? []).map((a) => a.slug));
+    const newAuto = autoIpsOut.filter((a) => !prevAuto.has(a.slug));
+    for (const a of newAuto) {
+      const n = seriesOut.filter((s) => s.ip === a.slug).length;
+      console.log(`★ 新收录 IP：${a.name}（${n} 个系列，展厅故事待补充 → /ips/${a.slug}）`);
+    }
+    if (!added.length && !addedProducts.length && !lost.length && !newAuto.length) console.log('内容没有变化。');
   }
   const known = new Set(IP_MAP.map(([o]) => o));
   const freshIPs = (raw.officialCharacters ?? []).filter((c) => !known.has(c.slug));
   if (freshIPs.length) {
     console.log(`\n⚠ 官网有 ${freshIPs.length} 个本站尚未收录的 IP：${freshIPs.map((c) => c.name).join('、')}`);
-    console.log('  收录方法见 README「新增一个 IP」。');
+    console.log('  全量运行 pnpm data:update 即可自动收录。');
   }
 }
 

@@ -1,17 +1,18 @@
 // 从泡泡玛特国际站（美国区）采集 IP 合集与商品的公开结构化数据。
 // 官网页面为服务端渲染，数据嵌在 __NEXT_DATA__ 中；本脚本只做低频、串行的只读请求。
 // 用法：node scripts/scrape-official.mjs [slug ...] [--refresh]
-//   默认采集 scripts/ips.mjs 中的全部 IP；已有详情的商品不重复请求，--refresh 则全部重新获取。
+//   默认采集全部 IP（scripts/ips.mjs + 自动登记的新 IP）；已有详情的商品不重复请求，--refresh 则全部重新获取。
+//   全量采集时，官网角色菜单里新出现的 IP 会自动登记到 data/auto-ips.json 并一起采集。
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { IP_LIST, NON_IP_COLLECTIONS } from './ips.mjs';
+import { NON_IP_COLLECTIONS, allIPs, readAutoIPs, siteSlugFor, writeAutoIPs } from './ips.mjs';
 
 const BASE = 'https://www.popmart.com/us';
 const OUT = path.resolve('data/official/raw.json');
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36';
 
-const COLLECTIONS = IP_LIST.map(([official]) => official);
+const COLLECTIONS = allIPs().map(([official]) => official);
 const REFRESH = process.argv.includes('--refresh');
 /** 官网导航“CHARACTERS”菜单中的全部角色合集 */
 let officialCharacters = null;
@@ -94,14 +95,18 @@ async function scrapeProduct(id) {
 
 async function main() {
   const only = process.argv.slice(2).filter((a) => !a.startsWith('--'));
-  const slugs = only.length ? only : COLLECTIONS;
+  const full = only.length === 0;
+  const queue = full ? [...COLLECTIONS] : only;
   let db = { fetchedAt: '', collections: {}, products: {} };
   try {
     db = JSON.parse(await fs.readFile(OUT, 'utf8'));
   } catch {}
 
   let added = 0;
-  for (const slug of slugs) {
+  let checkedMenu = false;
+  const registered = [];
+  for (let i = 0; i < queue.length; i++) {
+    const slug = queue[i];
     process.stdout.write(`• ${slug} … `);
     const col = await scrapeCollection(slug);
     db.collections[slug] = col;
@@ -119,19 +124,38 @@ async function main() {
     }
     added += n;
     console.log(`${col.products.length} 件商品${n ? `，获取详情 ${n} 条` : ''}`);
+
+    // 第一次拿到官网角色菜单后，检查是否有新 IP
+    if (!checkedMenu && officialCharacters) {
+      checkedMenu = true;
+      const known = new Set(allIPs().map(([o]) => o));
+      const fresh = officialCharacters.filter((c) => !known.has(c.slug));
+      if (fresh.length && full) {
+        const auto = readAutoIPs();
+        const taken = new Set(allIPs().map(([, s]) => s));
+        for (const c of fresh) {
+          const entry = { official: c.slug, slug: siteSlugFor(c.slug, taken), name: c.name, addedAt: new Date().toISOString().slice(0, 10) };
+          taken.add(entry.slug);
+          auto.push(entry);
+          registered.push(entry);
+          queue.push(c.slug);
+        }
+        writeAutoIPs(auto);
+      } else if (fresh.length) {
+        console.log(`\n⚠ 官网有本站尚未收录的 IP：${fresh.map((c) => c.name).join('、')}（全量运行 pnpm data:update 时会自动收录）`);
+      }
+    }
+
     db.fetchedAt = new Date().toISOString();
     if (officialCharacters?.length) db.officialCharacters = officialCharacters;
     await fs.mkdir(path.dirname(OUT), { recursive: true });
     await fs.writeFile(OUT, JSON.stringify(db, null, 1));
   }
 
-  console.log(`\n✓ 采集完成：${slugs.length} 个合集，获取商品详情 ${added} 条`);
-  const known = new Set(COLLECTIONS);
-  const fresh = (officialCharacters ?? []).filter((c) => !known.has(c.slug));
-  if (fresh.length) {
-    console.log('\n⚠ 官网出现了本站尚未收录的 IP：');
-    for (const c of fresh) console.log(`   - ${c.name}（官网合集 ${c.slug}）`);
-    console.log('  收录方法见 README「新增一个 IP」。');
+  console.log(`\n✓ 采集完成：${queue.length} 个合集，获取商品详情 ${added} 条`);
+  if (registered.length) {
+    console.log('\n★ 已自动收录官网新出现的 IP（展厅先用官网资料生成，故事待补充）：');
+    for (const r of registered) console.log(`   - ${r.name}（官网合集 ${r.official} → 本站 /ips/${r.slug}）`);
   }
 }
 

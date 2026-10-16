@@ -138,10 +138,20 @@ export interface Product {
   image: ImageAsset;
 }
 
+/** 自动收录的新 IP（展厅内容来自官网数据，故事待补充） */
+export interface AutoIP {
+  slug: string;
+  officialSlug: string;
+  name: string;
+  addedAt: string;
+  theme: IPTheme;
+}
+
 export interface Catalog {
   generatedAt: string;
   series: Series[];
   products: Product[];
+  autoIps?: AutoIP[];
   /** 各 IP 合集在官网上的简介与横幅 */
   collections: Record<string, { desc: string; banner?: ImageAsset; bannerMobile?: ImageAsset }>;
 }

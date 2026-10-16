@@ -49,7 +49,7 @@ cd /var/www/pop && bash deploy/update.sh --force
    cd /Users/shixiong/Developer/pop && pnpm data:update
    ```
 
-   结束时会打印一份摘要：新增了哪些系列、多少款单品，以及官网是否出现了本站还没收录的 IP。
+   结束时会打印一份摘要：新增了哪些系列、多少款单品，以及是否自动收录了新 IP。
 
 2. （可选）在本地预览新内容，启动后打开 http://localhost:3000：
 
@@ -70,13 +70,19 @@ cd /var/www/pop && bash deploy/update.sh --force
 - **频率**：官网上新没有固定节奏，每周或每月跑一次就够了。没有新内容时，摘要会显示“内容没有变化”。
 - **已收录的内容不会消失**：官网下架的商品仍保留在图鉴里，收藏链接也不会失效。新系列按“多款式盲盒优先、其次按时间”的规则加入，每个 IP 首次收录的上限是核心 40、精选 20、新锐 12 个系列。
 - **已有商品的款式有变化时**：默认只抓取新商品的详情。如果官网修改了已有商品（例如追加隐藏款），可以运行 `cd /Users/shixiong/Developer/pop && node scripts/scrape-official.mjs --refresh && pnpm data:build` 重新获取全部详情，耗时约 30–40 分钟。
-- **出现新 IP 时**：摘要会提示新 IP 的名字。新 IP 需要补充角色故事与出处，不能自动生成，按下面「新增一个 IP」操作，或者交给 Claude 处理。
+- **出现新 IP 时**：会自动收录，摘要里显示“★ 新收录 IP：XXX”。它的系列和单品照常进入图鉴；展厅先用官网资料生成（官网简介、产品图配色），创作者显示“待核实”，故事章节显示“待补充”，并标注“示例数据”。正式故事需要人工整理，见下面「为自动收录的 IP 补写故事」。
 
-## 新增一个 IP
+## 为自动收录的 IP 补写故事
 
-1. 在 `scripts/ips.mjs` 的 `IP_LIST` 中加一行：`[官网合集 slug, 本站 slug, 层级]`。官网合集 slug 就是官网地址 `popmart.com/us/collection/xxx` 中的 `xxx`；层级为 `core` / `featured` / `rising` 之一。
-2. 在 `src/content/ips/` 新建故事文件，参照 `IPContent` 类型（`src/lib/types.ts`）填写故事、主题色、出处与核实状态，并加入 `src/content/ips/index.ts` 的数组。
-3. 运行 `cd /Users/shixiong/Developer/pop && pnpm data:update`。页面、搜索索引与 sitemap 会自动生成。
+自动收录的 IP 记录在 `data/auto-ips.json`（官网合集 slug、本站 slug、名称）。补写故事后，手写内容会自动替换占位内容，网址保持不变：
+
+1. 在 `scripts/ips.mjs` 的 `IP_LIST` 中加一行：`[官网合集 slug, 本站 slug, 层级]`，两个 slug 照抄 `data/auto-ips.json` 里的值；层级为 `core` / `featured` / `rising` 之一。
+2. 在 `src/content/ips/` 新建故事文件，参照 `IPContent` 类型（`src/lib/types.ts`）填写故事、主题色、出处与核实状态，`slug` 与上一步一致，并加入 `src/content/ips/index.ts` 的数组。
+3. 运行 `cd /Users/shixiong/Developer/pop && pnpm data:update`，提交推送后在服务器上执行 `update.sh`。
+
+也可以把 IP 名字告诉 Claude，由它调研资料、写好故事并标注出处。
+
+如果官网角色菜单里出现了不属于单个 IP 的入口（例如“ALL”），把它的合集 slug 加进 `scripts/ips.mjs` 的 `NON_IP_COLLECTIONS`，并从 `data/auto-ips.json` 中删掉对应条目。
 
 ## 技术栈
 
@@ -108,13 +114,13 @@ src/
     motion/                 Reveal、SplitText、TiltCard、Parallax、Magnetic、Marquee、HorizontalScroll 等动效原语
     home/ ip/ product/ series/ search/ favorites/ cards/ layout/ ui/ seo/ providers/
   content/
-    ips/                    每个 IP 的故事、主题色、出处（手写，结构化）
+    ips/                    每个 IP 的故事、主题色、出处（手写，结构化）；auto.ts 为自动收录 IP 的占位内容
     sources.ts              全站引用的资料来源
     brand.ts                泡泡玛特品牌编年史
     generated/catalog.json  由数据管线生成的系列与产品图鉴
   lib/                      类型、数据访问、命名翻译、收藏与搜索逻辑
 scripts/
-  ips.mjs                   收录的 IP 清单（采集与生成共用）
+  ips.mjs                   手写收录的 IP 清单（采集与生成共用），自动收录的见 data/auto-ips.json
   scrape-official.mjs       采集泡泡玛特国际站公开数据 → data/official/raw.json
   build-data.mjs            筛选潮玩、下载与处理图片 → catalog.json + public/images/catalog
   fetch-fonts.mjs           下载自托管字体
