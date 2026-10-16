@@ -1,0 +1,282 @@
+import type { IPContent } from "@/lib/types";
+import { SRC } from "../sources";
+
+/**
+ * 新锐 IP：故事以泡泡玛特国际站合集页的官方简介为准，
+ * 官网商品页的设计师一栏多署名为 POP MART，具体创作者待核实。
+ */
+const POPMART_ARTIST = {
+  name: "泡泡玛特原创",
+  nameEn: "POP MART",
+  bio: "泡泡玛特国际站商品页的设计师一栏署名为 POP MART，具体创作者信息尚未找到官方公开资料。",
+};
+
+export const chaka: IPContent = {
+  slug: "chaka",
+  officialSlug: "chaka",
+  name: "CHAKA",
+  epithet: "蜡烛精灵",
+  aliases: ["chaka", "Candle Whisper"],
+  tagline: "被点亮的那一刻醒来，把世间的美好封存进烛蜡。",
+  intro: "一位蜡烛精灵。被点燃时醒来，热烈地感受一切，再把美好瞬间、深刻情感与宇宙真理封存在烛蜡里。",
+  tier: "rising",
+  moods: ["梦幻童话", "情绪共鸣"],
+  keywords: ["烛光", "热烈", "感受", "封存", "温度"],
+  artist: POPMART_ARTIST,
+  theme: { bg: "#F6EADB", surface: "#FCF6EE", accent: "#D27A22", ink: "#2A1B0E", glow: ["#FFD394", "#F6B49C"] },
+  quote: { text: "被点亮时醒来，把美好的瞬间、深刻的情感与宇宙的真理封存在烛蜡里。", by: "转述自泡泡玛特国际站 CHAKA 合集介绍" },
+  story: {
+    origin: ["CHAKA 是泡泡玛特旗下的原创 IP，官网商品页署名为 POP MART。"],
+    world: ["官方简介中，蜡烛精灵 CHAKA 会在被点亮时醒来，热情地体验一切，并把美好的瞬间、深刻的情感乃至宇宙的真理，一一封存在烛蜡之中。"],
+    personality: ["烛光有多短暂，CHAKA 就有多珍惜当下。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("chaka", "CHAKA")],
+  verification: "partial",
+};
+
+export const zsiga: IPContent = {
+  slug: "zsiga",
+  officialSlug: "zsiga",
+  name: "ZSIGA",
+  epithet: "嘴硬心软的女孩",
+  aliases: ["zsiga"],
+  tagline: "态度很差，但从不伤人；那是她保护自己的方式。",
+  intro: "不好相处、却从无恶意的女孩。她最好的朋友是右脚上的一只小狗，亲密到已经成为她身体的一部分。",
+  tier: "rising",
+  moods: ["潮流个性", "暗黑酷感"],
+  keywords: ["别扭", "倔强", "自我保护", "友情", "小狗"],
+  artist: POPMART_ARTIST,
+  theme: { bg: "#ECEAF1", surface: "#F7F6FA", accent: "#5A5E9A", ink: "#1B1C2E", glow: ["#CFCBEF", "#F2CFD8"] },
+  quote: { text: "她不好相处，但从无恶意；坏脾气只是一种自我保护。", by: "转述自泡泡玛特国际站 ZSIGA 合集介绍" },
+  story: {
+    origin: ["ZSIGA 是泡泡玛特旗下的原创 IP，官网商品页署名为 POP MART。"],
+    world: ["她最好的朋友是长在右脚上的一只小狗。它们亲密无间，小狗简直就是她身体的一部分。"],
+    personality: ["官方简介说，ZSIGA 不好相处，但从无恶意，那些坏脾气只是一种保护机制。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("zsiga", "ZSIGA")],
+  verification: "partial",
+};
+
+export const polar: IPContent = {
+  slug: "polar",
+  officialSlug: "polar",
+  name: "POLAR",
+  epithet: "林间小屋的怪物女孩",
+  aliases: ["polar", "Monster Village"],
+  tagline: "一大一小的眼睛、一只小角和一条尾巴，还有一脸藏不住的坏笑。",
+  intro: "来自奇幻森林小屋的怪物女孩，诞生于实验室，对世界充满好奇。",
+  tier: "rising",
+  moods: ["梦幻童话", "萌趣治愈"],
+  keywords: ["好奇", "淘气", "怪物", "森林", "身世之谜"],
+  artist: POPMART_ARTIST,
+  theme: { bg: "#E5EEF0", surface: "#F4F8F9", accent: "#3F8285", ink: "#11272A", glow: ["#C2E3E2", "#E9D7F2"] },
+  quote: { text: "她对自己的来历一无所知，就像人类对自身起源的未知。", by: "转述自泡泡玛特国际站 POLAR 合集介绍" },
+  story: {
+    origin: ["POLAR 是泡泡玛特旗下的原创 IP，官网商品页署名为 POP MART。"],
+    world: ["官方简介中，POLAR 是来自奇幻森林小屋的怪物女孩，诞生于一间实验室，对自己所在的世界充满好奇。"],
+    personality: ["一只眼睛比另一只大，头上长着小角，身后拖着尾巴，脸上总挂着淘气的笑。她对自己的来历一无所知，就像人类对自身起源的未知一样。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("polar", "POLAR")],
+  verification: "partial",
+};
+
+export const pinoJelly: IPContent = {
+  slug: "pino-jelly",
+  officialSlug: "pino-jelly",
+  name: "PINO JELLY",
+  epithet: "糖果世界的流行歌手",
+  aliases: ["pino jelly", "软糖男孩"],
+  tagline: "来自糖果世界的方块软糖，唱跳俱佳，甜度超标。",
+  intro: "来自糖果世界、风格十足的流行歌手，以出众的唱跳天赋闻名。方块软糖般的身体，配上半透明的手脚。",
+  tier: "rising",
+  moods: ["萌趣治愈", "潮流个性"],
+  keywords: ["甜", "舞台", "软糖", "明星", "活力"],
+  artist: {
+    name: "Yumi",
+    region: "中国",
+    bio: "据 Tatler Asia 报道，PINO JELLY 由中国设计师 Yumi 创作；官网商品页设计师一栏署名为 POP MART。",
+  },
+  theme: { bg: "#FFEDF3", surface: "#FFF7FA", accent: "#F25F92", ink: "#2C1220", glow: ["#FFC0D8", "#C3EEFF"] },
+  story: {
+    origin: ["据 Tatler Asia 报道，PINO JELLY 的诞生源于设计师本人因为不能吃糖，于是把对甜食的热爱转化成了创作灵感。"],
+    world: ["泡泡玛特官网介绍：PINO JELLY 是来自糖果世界的流行歌星，风格十足，以惊人的唱歌和跳舞天赋闻名。"],
+    personality: ["方块软糖般的身体，最有特色的是那双半透明、像小熊软糖一样的手脚。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("pino-jelly", "PINO JELLY"), SRC.tatlerPino],
+  verification: "partial",
+};
+
+export const inosoul: IPContent = {
+  slug: "inosoul",
+  officialSlug: "inosoul",
+  name: "INOSOUL",
+  epithet: "清醒梦里的情绪",
+  aliases: ["inosoul", "Lucid Dreams"],
+  tagline: "把难以言说的心绪，放进一个安静的房间。",
+  intro: "泡泡玛特旗下以情绪与氛围为主题的原创 IP，代表系列包括 Lucid Dreams 等。",
+  tier: "rising",
+  moods: ["情绪共鸣"],
+  keywords: ["氛围", "梦境", "情绪", "安静", "内心"],
+  artist: POPMART_ARTIST,
+  theme: { bg: "#E8E6EE", surface: "#F5F4F8", accent: "#6F64A3", ink: "#1D1A2C", glow: ["#D6CFF2", "#CFE2EC"] },
+  story: {
+    origin: ["INOSOUL 是泡泡玛特旗下的原创 IP，官网商品页署名为 POP MART；官网合集页暂无文字简介。"],
+    world: ["从系列名来看，INOSOUL 的作品围绕梦境与内心展开，例如 Lucid Dreams（清醒梦）系列。"],
+    personality: ["本站暂未找到关于其角色设定的官方资料，待补充。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("inosoul", "INOSOUL")],
+  verification: "sample",
+};
+
+export const tinyTiny: IPContent = {
+  slug: "tiny-tiny",
+  officialSlug: "tiny-tiny",
+  name: "TINY TINY",
+  epithet: "永远长不大的女孩",
+  aliases: ["tiny tiny"],
+  tagline: "在没有时间的维度里，她永远是个孩子。",
+  intro: "来自一个时间并不存在的多维空间，永远保持着孩童的模样。",
+  tier: "rising",
+  moods: ["梦幻童话"],
+  keywords: ["永恒", "童真", "多维空间", "小小", "奇想"],
+  artist: POPMART_ARTIST,
+  theme: { bg: "#F0EDFA", surface: "#F9F8FD", accent: "#8763DA", ink: "#1E1533", glow: ["#DCCFFF", "#FFE0EE"] },
+  quote: { text: "她来自一个没有时间的多维空间，永远保持着孩子的模样。", by: "转述自泡泡玛特国际站 TINY TINY 合集介绍" },
+  story: {
+    origin: ["TINY TINY 是泡泡玛特旗下的原创 IP，官网商品页署名为 POP MART。"],
+    world: ["官方简介：TINY TINY 来自一个时间并不存在的多维空间。"],
+    personality: ["因为没有时间，她永远年轻，永远是孩童的模样。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("tiny-tiny", "TINY TINY")],
+  verification: "partial",
+};
+
+export const duckoo: IPContent = {
+  slug: "duckoo",
+  officialSlug: "duckoo",
+  name: "DUCKOO",
+  epithet: "能量满满的鸭子们",
+  aliases: ["duckoo", "鸭子"],
+  tagline: "羽毛很普通，能量不普通。",
+  intro: "一群羽毛平平无奇、能量却非同寻常的鸭子。",
+  tier: "rising",
+  moods: ["萌趣治愈"],
+  keywords: ["元气", "鸭子", "群像", "快乐", "日常"],
+  artist: POPMART_ARTIST,
+  theme: { bg: "#FFF5D9", surface: "#FFFBEE", accent: "#DCA412", ink: "#2A2108", glow: ["#FFE38A", "#BFE8F5"] },
+  quote: { text: "羽毛平平无奇，能量非同寻常。", by: "转述自泡泡玛特国际站 DUCKOO 合集介绍" },
+  story: {
+    origin: ["DUCKOO 是泡泡玛特旗下的原创 IP，官网商品页署名为 POP MART。"],
+    world: ["官方简介：DUCKOO 是一群鸭子，羽毛很普通，能量却一点也不普通。"],
+    personality: ["本站暂未找到更多关于角色个性的官方资料，待补充。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("duckoo", "DUCKOO")],
+  verification: "partial",
+};
+
+export const merodi: IPContent = {
+  slug: "merodi",
+  officialSlug: "merodi",
+  name: "MERODI",
+  epithet: "听得懂动物说话的女孩",
+  aliases: ["merodi"],
+  tagline: "某天醒来，她发现自己能听懂动物们在说什么。",
+  intro: "一个调皮的小女孩，惊喜地发现自己竟然能听懂动物的语言。",
+  tier: "rising",
+  moods: ["萌趣治愈", "梦幻童话"],
+  keywords: ["调皮", "动物", "倾听", "惊喜", "自然"],
+  artist: { name: "待核实", bio: "官网商品页未署名设计师，创作者信息尚未找到官方公开资料。" },
+  theme: { bg: "#E8F3EA", surface: "#F5FAF6", accent: "#3F9459", ink: "#132617", glow: ["#C5EBCB", "#FFE2C2"] },
+  quote: { text: "她惊讶地发现，自己能听懂动物的语言。", by: "转述自泡泡玛特国际站 MERODI 合集介绍" },
+  story: {
+    origin: ["MERODI 是泡泡玛特旗下的 IP，官网商品页暂未署名设计师。"],
+    world: ["官方简介：调皮的小女孩 MERODI 惊讶地发现，自己竟然能听懂动物的语言。"],
+    personality: ["本站暂未找到更多关于角色个性的官方资料，待补充。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("merodi", "MERODI")],
+  verification: "partial",
+};
+
+export const sweetBean: IPContent = {
+  slug: "sweet-bean",
+  officialSlug: "sweet-bean",
+  name: "SWEET BEAN",
+  epithet: "两岁半的小豆子",
+  aliases: ["sweet bean", "Xuechen"],
+  tagline: "一个两岁半的孩子，能唤醒每个人心里的小孩。",
+  intro: "由泡泡玛特设计中心设计师 Xuechen 创作，一个两岁半的小朋友，能唤醒任何人内心的童真。",
+  tier: "rising",
+  moods: ["萌趣治愈"],
+  keywords: ["童真", "零食", "奶萌", "日常", "陪伴"],
+  artist: {
+    name: "Xuechen",
+    region: "泡泡玛特设计中心",
+    bio: "泡泡玛特设计中心（POP MART Design Center）设计师，SWEET BEAN 的创作者。",
+  },
+  theme: { bg: "#FFF2E3", surface: "#FFF9F1", accent: "#DD8636", ink: "#2B1B0B", glow: ["#FFD7A8", "#FFD1DA"] },
+  quote: { text: "一个两岁半的孩子，能唤醒任何人心中的小孩。", by: "转述自泡泡玛特国际站 SWEET BEAN 合集介绍" },
+  story: {
+    origin: ["官方介绍：SWEET BEAN 由泡泡玛特设计中心的设计师 Xuechen 创作。"],
+    world: ["SWEET BEAN 是一个两岁半的孩子，零食、日常小事都是它的舞台。"],
+    personality: ["它的魔力在于，能唤醒任何人心中的那个小孩。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("sweet-bean", "SWEET BEAN")],
+  verification: "verified",
+};
+
+export const moons1001: IPContent = {
+  slug: "1001moons",
+  officialSlug: "1001moons",
+  name: "1001MOONS",
+  epithet: "帽子精灵 Hatti",
+  aliases: ["1001moons", "1001 moons", "Hatti"],
+  tagline: "在群星之外的安静星球上，住着戴帽子的小精灵。",
+  intro: "在遥远的群星之外，有一颗安静的星球，那里住着名叫 Hatti 的小帽子精灵。",
+  tier: "rising",
+  moods: ["梦幻童话"],
+  keywords: ["星球", "月亮", "帽子", "安静", "童话"],
+  artist: { name: "待核实", bio: "官网商品页未署名设计师，创作者信息尚未找到官方公开资料。" },
+  theme: { bg: "#151A33", surface: "#1F2546", accent: "#F1D27B", ink: "#EEF0FB", glow: ["#3B3F86", "#5B3B77"], dark: true },
+  quote: { text: "在遥远的群星之外，有一颗安静的星球，住着名叫 Hatti 的小帽子精灵……", by: "转述自泡泡玛特国际站 1001MOONS 合集介绍" },
+  story: {
+    origin: ["1001MOONS 是泡泡玛特旗下的 IP，官网商品页暂未署名设计师。"],
+    world: ["官方简介：在遥远的群星之外，有一颗安静的星球，那里是小帽子精灵 Hatti 们的家。"],
+    personality: ["本站暂未找到更多关于角色个性的官方资料，待补充。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("1001moons", "1001MOONS")],
+  verification: "partial",
+};
+
+export const supertutu: IPContent = {
+  slug: "supertutu",
+  officialSlug: "supertutu",
+  name: "SUPERTUTU",
+  epithet: "兔牙爱笑女孩",
+  aliases: ["supertutu", "TUTU"],
+  tagline: "来自魔法星球 TUTU，马尾会随着心情变换模样。",
+  intro: "一个爱咯咯笑、长着兔牙的女孩，来自魔法星球 TUTU，她的马尾会随着心情变化。",
+  tier: "rising",
+  moods: ["萌趣治愈", "潮流个性"],
+  keywords: ["爱笑", "兔牙", "魔法", "心情", "活泼"],
+  artist: { name: "待核实", bio: "官网商品页未署名设计师，创作者信息尚未找到官方公开资料。" },
+  theme: { bg: "#FFEDEF", surface: "#FFF7F8", accent: "#EE5168", ink: "#2C1116", glow: ["#FFC3CC", "#FFE8A8"] },
+  quote: { text: "她的马尾会随着心情变换模样。", by: "转述自泡泡玛特国际站 SUPERTUTU 合集介绍" },
+  story: {
+    origin: ["SUPERTUTU 是泡泡玛特旗下的 IP，官网商品页暂未署名设计师。"],
+    world: ["官方简介：SUPERTUTU 来自魔法星球 TUTU。"],
+    personality: ["她是个爱咯咯笑、长着兔牙的女孩，马尾辫会随着心情改变。"],
+  },
+  milestones: [],
+  sources: [SRC.popmartUs("supertutu", "SUPERTUTU")],
+  verification: "partial",
+};

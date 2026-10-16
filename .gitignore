@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 数据管线日志
+/data/*.log
+/data/official/log-*.txt
