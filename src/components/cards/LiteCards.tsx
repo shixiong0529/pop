@@ -5,6 +5,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { FavoriteButton } from "@/components/favorites/FavoriteButton";
 import { SecretVeil } from "@/components/product/SecretVeil";
+import { UpcomingBadge } from "@/components/ui/UpcomingBadge";
 import type { ProductLite, SeriesLite } from "@/lib/compact";
 
 /** 客户端列表用的系列卡片（数据精简版） */
@@ -24,6 +25,7 @@ export function LiteSeriesCard({ s, showIP = true, sizes }: { s: SeriesLite; sho
           {s.secrets > 0 && (
             <span className="rounded-full bg-ink/80 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur-md">含隐藏款</span>
           )}
+          <UpcomingBadge releaseAt={s.releaseAt} />
         </div>
         <div className="absolute right-3 top-3 translate-y-1 opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 max-md:translate-y-0 max-md:opacity-100">
           <FavoriteButton

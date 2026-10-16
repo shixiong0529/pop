@@ -15,6 +15,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { SplitText } from "@/components/motion/SplitText";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { UpcomingBadge } from "@/components/ui/UpcomingBadge";
 import { getAllSeries, getIP, getProductsOfSeries, getRelatedSeries, getSeries } from "@/lib/data";
 import { CATEGORY_LABEL, seriesDate, seriesFullName, seriesName } from "@/lib/naming";
 import { themeVars } from "@/lib/theme";
@@ -120,6 +121,7 @@ async function SeriesView({ params }: { params: PageProps<"/series/[slug]">["par
             </h1>
             {n.nameZh && <p className="mt-2 text-xl font-semibold opacity-70">{n.name}</p>}
             <p className="mt-4 text-[13px] leading-6 opacity-70">官方名称：{s.title}</p>
+            <UpcomingBadge releaseAt={s.releaseAt} variant="detail" className="mt-4" />
 
             <Reveal delay={0.2} className="mt-8">
               <SpecList

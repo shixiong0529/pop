@@ -61,6 +61,32 @@ function parseDate(text) {
   return undefined;
 }
 
+/** 美国太平洋时间是否处于夏令时（3 月第二个周日至 11 月第一个周日） */
+function pacificDST(y, m, d) {
+  const sunday = (month, nth) => {
+    const dow = new Date(Date.UTC(y, month - 1, 1)).getUTCDay();
+    return 1 + ((7 - dow) % 7) + 7 * (nth - 1);
+  };
+  if (m > 3 && m < 11) return true;
+  if (m === 3) return d >= sunday(3, 2);
+  if (m === 11) return d < sunday(11, 1);
+  return false;
+}
+
+/**
+ * 官网发售时刻（Unix 秒）。官网写的是美国太平洋时间，如 “October 22, 2026 at 5:00 PM (PST)”；
+ * 没有具体时刻时按当天 0 点计。
+ */
+function parseReleaseAt(text, date) {
+  if (!text || !date || date.length !== 10) return undefined;
+  const [y, m, d] = date.split('-').map(Number);
+  const t = text.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+  let h = t ? Number(t[1]) % 12 : 0;
+  if (t && /pm/i.test(t[3])) h += 12;
+  const offset = pacificDST(y, m, d) ? 7 : 8;
+  return Date.UTC(y, m - 1, d, h + offset, t ? Number(t[2]) : 0) / 1000;
+}
+
 function fields(desc) {
   const out = {};
   for (const line of desc.split(/\n/)) {
@@ -195,12 +221,15 @@ async function main() {
     if (REPORT) console.log(`[${ip}] ${category ? category.padEnd(8) : '  ✗     '} ${p.title}  (toys ${p.toys.length})`);
     if (!category) continue;
     const f = fields(p.desc);
-    const releaseText = f['release date'] ?? f['launch time'];
+    // 发售时间：较早的商品写作 Release Date，较新的写作 Online Release (Official Website)
+    const onlineText = p.desc.match(/Online Release[^:：\n]*[:：][ \t]*([^\n]+)/i)?.[1]?.trim();
+    const releaseText = f['release date'] ?? f['launch time'] ?? onlineText;
     const releaseDate = parseDate(releaseText);
+    const releaseAt = parseReleaseAt(releaseText, releaseDate);
     const time = releaseDate ? Date.parse(releaseDate.length === 7 ? releaseDate + '-01' : releaseDate) / 1000 : item.upTime ?? 0;
     // MEGA 在单品中优先
     const sortKey = time + (category === 'mega' ? 180 * 86400 : 0);
-    (candidates[ip] ??= []).push({ p, item, ip, category, f, releaseText, releaseDate, sortKey });
+    (candidates[ip] ??= []).push({ p, item, ip, category, f, releaseText, releaseDate, releaseAt, sortKey });
   }
 
   if (REPORT) return;
@@ -278,6 +307,7 @@ async function main() {
       category: s.category,
       releaseDate: s.releaseDate,
       releaseText: s.releaseText,
+      releaseAt: s.releaseAt,
       listedAt: s.item.upTime ?? 0,
       designer: s.f.designer && !/^pop\s*mart$/i.test(s.f.designer) ? s.f.designer : undefined,
       size: s.f.size ?? s.f.height,

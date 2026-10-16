@@ -5,6 +5,7 @@ import { Img } from "@/components/ui/Img";
 import { FavoriteButton } from "@/components/favorites/FavoriteButton";
 import type { Series } from "@/lib/types";
 import { seriesDate, seriesName } from "@/lib/naming";
+import { UpcomingBadge } from "@/components/ui/UpcomingBadge";
 
 type Props = {
   series: Series;
@@ -59,6 +60,7 @@ export function SeriesCard({ series, ipName, layout = "square", morph = false, c
               含隐藏款
             </span>
           )}
+          <UpcomingBadge releaseAt={series.releaseAt} />
         </div>
         <div className="absolute right-3 top-3 translate-y-1 opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 max-md:translate-y-0 max-md:opacity-100">
           <FavoriteButton

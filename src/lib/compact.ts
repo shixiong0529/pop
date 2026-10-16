@@ -15,6 +15,7 @@ export interface SeriesLite {
   dateValue: string;
   year?: number;
   time: number;
+  releaseAt?: number;
   count: number;
   secrets: number;
   cover: { src: string; w: number; h: number; color: string };
@@ -47,6 +48,7 @@ export function toSeriesLite(s: Series, ipName: string): SeriesLite {
     dateValue: d.value,
     year: d.year,
     time: s.releaseDate ? Date.parse(s.releaseDate.length === 7 ? `${s.releaseDate}-01` : s.releaseDate) / 1000 : s.listedAt,
+    releaseAt: s.releaseAt,
     count: s.products.length,
     secrets: s.secretCount,
     cover: { src: s.cover.src, w: s.cover.w, h: s.cover.h, color: s.cover.color },

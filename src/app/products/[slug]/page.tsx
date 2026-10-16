@@ -13,6 +13,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { SplitText } from "@/components/motion/SplitText";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { UpcomingBadge } from "@/components/ui/UpcomingBadge";
 import { getFeaturedProducts, getIP, getProduct, getProductsOfSeries, getRelatedProducts, getSeriesById } from "@/lib/data";
 import { CATEGORY_LABEL, seriesDate, seriesName } from "@/lib/naming";
 import { themeVars } from "@/lib/theme";
@@ -124,6 +125,7 @@ async function ProductView({ params }: { params: PageProps<"/products/[slug]">["
                   </span>
                 )}
                 <span className="rounded-full px-3 py-1 text-[12px] font-medium ring-1 ring-current/15">{n.kind}</span>
+                <UpcomingBadge releaseAt={s.releaseAt} variant="detail" />
               </div>
 
               <h1 className="mt-5 font-display text-[clamp(2.6rem,5vw,4.6rem)] font-black leading-[0.95] tracking-[-0.04em]">

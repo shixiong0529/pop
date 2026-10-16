@@ -111,6 +111,8 @@ export interface Series {
   releaseDate?: string;
   /** 官网原文中的发售日期 */
   releaseText?: string;
+  /** 官网发售时刻（Unix 秒，由美国太平洋时间换算） */
+  releaseAt?: number;
   /** 美国站上架时间（秒级时间戳），仅用于排序 */
   listedAt: number;
   designer?: string;
