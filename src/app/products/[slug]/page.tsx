@@ -13,13 +13,15 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { SplitText } from "@/components/motion/SplitText";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getAllProducts, getIP, getProduct, getProductsOfSeries, getRelatedProducts, getSeriesById } from "@/lib/data";
+import { getFeaturedProducts, getIP, getProduct, getProductsOfSeries, getRelatedProducts, getSeriesById } from "@/lib/data";
 import { CATEGORY_LABEL, seriesDate, seriesName } from "@/lib/naming";
 import { themeVars } from "@/lib/theme";
 import { SITE } from "@/lib/site";
 
+// 只预生成首页精选展台里的产品；其余 2000+ 个产品页在第一次被访问时生成并缓存，
+// 这样构建时间不会随产品数量增长（站点地图仍然列出全部产品）。
 export function generateStaticParams() {
-  return getAllProducts().map((p) => ({ slug: p.slug }));
+  return [...new Set(getFeaturedProducts(14).map((p) => p.slug))].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps<"/products/[slug]">): Promise<Metadata> {
