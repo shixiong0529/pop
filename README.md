@@ -41,20 +41,26 @@ cd /var/www/pop && bash deploy/update.sh --force
 
 内容更新在 **Mac 上** 完成，数据和图片随代码一起提交到 GitHub，服务器只负责构建。服务器访问官网和 GitHub 都不稳定，所以不在服务器上抓取数据。
 
+下面的命令都以 `cd /Users/shixiong/Developer/pop` 开头：pnpm 会按当前目录查找 `package.json` 来确定要操作哪个项目，必须先进入项目目录。
+
 1. 抓取官网最新数据并生成图鉴：
 
    ```bash
-   pnpm data:update
+   cd /Users/shixiong/Developer/pop && pnpm data:update
    ```
 
    结束时会打印一份摘要：新增了哪些系列、多少款单品，以及官网是否出现了本站还没收录的 IP。
 
-2. （可选）用 `pnpm dev` 在本地看一眼新内容。
+2. （可选）在本地预览新内容，启动后打开 http://localhost:3000：
+
+   ```bash
+   cd /Users/shixiong/Developer/pop && pnpm dev
+   ```
 
 3. 提交并推送：
 
    ```bash
-   git add -A && git commit -m "更新图鉴数据" && git push
+   cd /Users/shixiong/Developer/pop && git add -A && git commit -m "更新图鉴数据" && git push
    ```
 
 4. 在服务器上执行 `cd /var/www/pop && bash deploy/update.sh`。
@@ -63,14 +69,14 @@ cd /var/www/pop && bash deploy/update.sh --force
 
 - **频率**：官网上新没有固定节奏，每周或每月跑一次就够了。没有新内容时，摘要会显示“内容没有变化”。
 - **已收录的内容不会消失**：官网下架的商品仍保留在图鉴里，收藏链接也不会失效。新系列按“多款式盲盒优先、其次按时间”的规则加入，每个 IP 首次收录的上限是核心 40、精选 20、新锐 12 个系列。
-- **已有商品的款式有变化时**：默认只抓取新商品的详情。如果官网修改了已有商品（例如追加隐藏款），可以运行 `node scripts/scrape-official.mjs --refresh && pnpm data:build` 重新获取全部详情，耗时约 30–40 分钟。
+- **已有商品的款式有变化时**：默认只抓取新商品的详情。如果官网修改了已有商品（例如追加隐藏款），可以运行 `cd /Users/shixiong/Developer/pop && node scripts/scrape-official.mjs --refresh && pnpm data:build` 重新获取全部详情，耗时约 30–40 分钟。
 - **出现新 IP 时**：摘要会提示新 IP 的名字。新 IP 需要补充角色故事与出处，不能自动生成，按下面「新增一个 IP」操作，或者交给 Claude 处理。
 
 ## 新增一个 IP
 
 1. 在 `scripts/ips.mjs` 的 `IP_LIST` 中加一行：`[官网合集 slug, 本站 slug, 层级]`。官网合集 slug 就是官网地址 `popmart.com/us/collection/xxx` 中的 `xxx`；层级为 `core` / `featured` / `rising` 之一。
 2. 在 `src/content/ips/` 新建故事文件，参照 `IPContent` 类型（`src/lib/types.ts`）填写故事、主题色、出处与核实状态，并加入 `src/content/ips/index.ts` 的数组。
-3. 运行 `pnpm data:update`。页面、搜索索引与 sitemap 会自动生成。
+3. 运行 `cd /Users/shixiong/Developer/pop && pnpm data:update`。页面、搜索索引与 sitemap 会自动生成。
 
 ## 技术栈
 
