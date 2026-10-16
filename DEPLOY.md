@@ -50,6 +50,10 @@ cd /var/www/pop && bash deploy/setup-ubuntu.sh http://101.133.227.55
 cd /var/www/pop && bash deploy/update.sh
 ```
 
+没有新提交时脚本会直接退出；依赖没有变化时会跳过安装。需要强制重新构建，就在命令末尾加 `--force`。
+
+官网出了新 IP、新系列或新单品时，先在 Mac 上更新数据再推送，步骤见 [README.md](README.md)「更新网站内容」。
+
 ## 三、可选：推送后自动部署（GitHub Actions）
 
 仓库里已经有 `.github/workflows/deploy.yml`。配置好以下三个密钥后，每次推送到 `main`，GitHub 都会自动登录服务器执行 `deploy/update.sh`。没有配置密钥时，这个工作流会直接跳过。

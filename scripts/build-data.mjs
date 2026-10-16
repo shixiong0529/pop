@@ -1,45 +1,20 @@
 // 把官网采集数据整理成本站图鉴：筛选潮玩系列 → 下载并处理图片 → 生成 catalog.json
-// 用法：node scripts/build-data.mjs [--no-images]
+// 用法：node scripts/build-data.mjs [--no-images] [--report]
+// 已收录的系列会一直保留（即使官网已下架），新系列按排序规则加入，结束时输出本次更新摘要。
 import fs from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import sharp from 'sharp';
+import { IP_LIST as IP_MAP, CAP } from './ips.mjs';
 
-const RAW_DIR = 'data/official';
+const RAW_FILE = 'data/official/raw.json';
 const IMG_DIR = 'public/images/catalog';
 const MANIFEST = 'data/images.json';
 const OUT = 'src/content/generated/catalog.json';
 const SKIP_IMAGES = process.argv.includes('--no-images');
 const REPORT = process.argv.includes('--report');
 
-// [官网合集 slug, 本站 IP slug, 层级]，顺序即归属优先级
-const IP_MAP = [
-  ['the-monsters', 'labubu', 'core'],
-  ['molly', 'molly', 'core'],
-  ['skullpanda', 'skullpanda', 'core'],
-  ['dimoo', 'dimoo', 'core'],
-  ['hirono', 'hirono', 'core'],
-  ['crybaby', 'crybaby', 'core'],
-  ['twinkle-twinkle', 'twinkle-twinkle', 'featured'],
-  ['pucky', 'pucky', 'featured'],
-  ['hacipupu', 'hacipupu', 'featured'],
-  ['peach-riot', 'peach-riot', 'featured'],
-  ['kubo', 'kubo', 'featured'],
-  ['nyota', 'nyota', 'featured'],
-  ['chaka', 'chaka', 'rising'],
-  ['zsiga', 'zsiga', 'rising'],
-  ['polar', 'polar', 'rising'],
-  ['pino-jelly', 'pino-jelly', 'rising'],
-  ['inosoul', 'inosoul', 'rising'],
-  ['tiny-tiny', 'tiny-tiny', 'rising'],
-  ['duckoo', 'duckoo', 'rising'],
-  ['merodi', 'merodi', 'rising'],
-  ['sweet-bean', 'sweet-bean', 'rising'],
-  ['1001moons', '1001moons', 'rising'],
-  ['supertutu', 'supertutu', 'rising'],
-];
-const CAP = { core: 40, featured: 20, rising: 12 };
 /** 品牌名 → IP（用于把联名/跨合集商品归到正确的 IP） */
 const BRAND_ALIAS = { LABUBU: 'labubu', 'THE MONSTERS': 'labubu', 'TWINKLE TWINKLE': 'twinkle-twinkle' };
 
@@ -174,18 +149,15 @@ async function pool(items, size, fn) {
 
 // ───────── 主流程 ─────────
 async function main() {
-  const files = (await fs.readdir(RAW_DIR)).filter((f) => /^raw.*\.json$/.test(f));
-  const collections = {};
-  const products = {};
-  let fetchedAt = '';
-  for (const f of files) {
-    const d = JSON.parse(await fs.readFile(path.join(RAW_DIR, f), 'utf8'));
-    for (const [k, c] of Object.entries(d.collections)) {
-      if (!collections[k] || c.products.length > collections[k].products.length) collections[k] = c;
-    }
-    Object.assign(products, d.products);
-    if (d.fetchedAt > fetchedAt) fetchedAt = d.fetchedAt;
-  }
+  const raw = JSON.parse(await fs.readFile(RAW_FILE, 'utf8'));
+  const { collections, products, fetchedAt } = raw;
+
+  // 上一次生成的图鉴：已收录的系列一直保留
+  let prev = { series: [], products: [] };
+  try {
+    prev = JSON.parse(await fs.readFile(OUT, 'utf8'));
+  } catch {}
+  const prevSeries = new Map(prev.series.map((s) => [Number(s.id), s]));
 
   const missing = IP_MAP.filter(([o]) => !collections[o]).map(([o]) => o);
   if (missing.length) console.warn('缺少合集数据：', missing.join(', '));
@@ -205,12 +177,21 @@ async function main() {
     }
   }
 
+  // 官网已下架、但之前收录过的系列：保留在图鉴中
+  const listed = new Set([...owner.keys()].map(Number));
+  let delisted = 0;
+  for (const [id, prevS] of prevSeries) {
+    if (listed.has(id) || !products[id]) continue;
+    owner.set(id, { ip: prevS.ip, item: { id, upTime: prevS.listedAt, coverImg: '' } });
+    delisted++;
+  }
+
   // 候选系列
   const candidates = {};
   for (const [id, { ip, item }] of owner) {
     const p = products[id];
     if (!p) continue;
-    const category = classify(p);
+    const category = classify(p) ?? prevSeries.get(Number(id))?.category;
     if (REPORT) console.log(`[${ip}] ${category ? category.padEnd(8) : '  ✗     '} ${p.title}  (toys ${p.toys.length})`);
     if (!category) continue;
     const f = fields(p.desc);
@@ -229,8 +210,11 @@ async function main() {
     const list = (candidates[ip] ?? []).sort(
       (a, b) => Number(b.p.toys.length > 1) - Number(a.p.toys.length > 1) || b.sortKey - a.sortKey,
     );
-    selected.push(...list.slice(0, CAP[tier]));
-    console.log(`${ip.padEnd(16)} 候选 ${String(list.length).padStart(3)} → 收录 ${Math.min(list.length, CAP[tier])}`);
+    // 已收录的全部保留；新系列只收录排在上限以内的（新品通常排在前面）
+    const top = new Set(list.slice(0, CAP[tier]));
+    const chosen = list.filter((c) => prevSeries.has(Number(c.p.id)) || top.has(c));
+    selected.push(...chosen);
+    console.log(`${ip.padEnd(16)} 候选 ${String(list.length).padStart(3)} → 收录 ${chosen.length}`);
   }
 
   // 图片任务
@@ -324,6 +308,31 @@ async function main() {
     JSON.stringify({ generatedAt: fetchedAt, series: seriesOut, products: productsOut, collections: collectionsOut }),
   );
   console.log(`✓ 系列 ${seriesOut.length} 个，产品 ${productsOut.length} 款 → ${OUT}`);
+
+  // ───────── 本次更新摘要 ─────────
+  if (prev.series.length) {
+    const ipName = (slug) => slug.toUpperCase();
+    const prevSlugs = new Set(prev.products.map((p) => p.slug));
+    const added = seriesOut.filter((s) => !prevSeries.has(s.id));
+    const addedProducts = productsOut.filter((p) => !prevSlugs.has(p.slug));
+    const kept = new Set(seriesOut.map((s) => s.id));
+    const lost = [...prevSeries.values()].filter((s) => !kept.has(Number(s.id)));
+    console.log('\n── 本次更新 ──');
+    console.log(`新增系列 ${added.length} 个，新增单品 ${addedProducts.length} 款`);
+    for (const s of added) console.log(`  + [${ipName(s.ip)}] ${s.title}（${s.products.length} 款）`);
+    if (delisted) console.log(`官网已下架、仍保留在图鉴中的系列：${delisted} 个`);
+    if (lost.length) {
+      console.log(`⚠ 有 ${lost.length} 个系列没能保留（通常是缺少图片或商品详情）：`);
+      for (const s of lost) console.log(`  - [${ipName(s.ip)}] ${s.title}`);
+    }
+    if (!added.length && !addedProducts.length && !lost.length) console.log('内容没有变化。');
+  }
+  const known = new Set(IP_MAP.map(([o]) => o));
+  const freshIPs = (raw.officialCharacters ?? []).filter((c) => !known.has(c.slug));
+  if (freshIPs.length) {
+    console.log(`\n⚠ 官网有 ${freshIPs.length} 个本站尚未收录的 IP：${freshIPs.map((c) => c.name).join('、')}`);
+    console.log('  收录方法见 README「新增一个 IP」。');
+  }
 }
 
 main().catch((err) => {

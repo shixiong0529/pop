@@ -1,20 +1,20 @@
 // 从泡泡玛特国际站（美国区）采集 IP 合集与商品的公开结构化数据。
 // 官网页面为服务端渲染，数据嵌在 __NEXT_DATA__ 中；本脚本只做低频、串行的只读请求。
-// 用法：node scripts/scrape-official.mjs [slug ...]
+// 用法：node scripts/scrape-official.mjs [slug ...] [--refresh]
+//   默认采集 scripts/ips.mjs 中的全部 IP；已有详情的商品不重复请求，--refresh 则全部重新获取。
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { IP_LIST, NON_IP_COLLECTIONS } from './ips.mjs';
 
 const BASE = 'https://www.popmart.com/us';
-const OUT = path.resolve(process.env.OUT ?? 'data/official/raw.json');
+const OUT = path.resolve('data/official/raw.json');
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36';
 
-export const COLLECTIONS = [
-  'the-monsters', 'molly', 'skullpanda', 'dimoo', 'hirono', 'crybaby',
-  'twinkle-twinkle', 'pucky', 'hacipupu', 'peach-riot', 'kubo', 'nyota',
-  'chaka', 'zsiga', 'polar', 'pino-jelly', 'inosoul', 'tiny-tiny',
-  'duckoo', 'merodi', 'sweet-bean', '1001moons', 'supertutu',
-];
+const COLLECTIONS = IP_LIST.map(([official]) => official);
+const REFRESH = process.argv.includes('--refresh');
+/** 官网导航“CHARACTERS”菜单中的全部角色合集 */
+let officialCharacters = null;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -39,6 +39,7 @@ async function nextData(url, tries = 3) {
 
 async function scrapeCollection(slug) {
   const first = await nextData(`${BASE}/collection/${slug}?page=1`);
+  officialCharacters ??= readCharacters(first.serverNavData);
   const raw = first.serverCollectionRaw;
   const pages = Math.ceil(raw.total / 20);
   const items = [...raw.productData];
@@ -68,6 +69,13 @@ async function scrapeCollection(slug) {
   };
 }
 
+function readCharacters(nav) {
+  const menu = (nav ?? []).find((n) => /^characters$/i.test(n.title?.trim() ?? ''));
+  return (menu?.jsonData?.secondMenu ?? [])
+    .map((m) => ({ name: m.title, slug: m.webUrl?.match(/\/collection\/([^/?#]+)/)?.[1] }))
+    .filter((m) => m.slug && !NON_IP_COLLECTIONS.has(m.slug));
+}
+
 async function scrapeProduct(id) {
   const pp = await nextData(`${BASE}/products/${id}`);
   const c = pp.serverSeoData?.commonInfo;
@@ -85,34 +93,45 @@ async function scrapeProduct(id) {
 }
 
 async function main() {
-  const only = process.argv.slice(2);
+  const only = process.argv.slice(2).filter((a) => !a.startsWith('--'));
   const slugs = only.length ? only : COLLECTIONS;
   let db = { fetchedAt: '', collections: {}, products: {} };
   try {
     db = JSON.parse(await fs.readFile(OUT, 'utf8'));
   } catch {}
 
+  let added = 0;
   for (const slug of slugs) {
     process.stdout.write(`• ${slug} … `);
     const col = await scrapeCollection(slug);
     db.collections[slug] = col;
-    console.log(`${col.products.length} 件商品`);
     let n = 0;
     for (const p of col.products) {
-      if (db.products[p.id]) continue;
+      if (db.products[p.id] && !REFRESH) continue;
       await sleep(250);
       try {
         const detail = await scrapeProduct(p.id);
         if (detail) db.products[p.id] = detail;
         n++;
       } catch (err) {
-        console.warn(`  ! ${err.message}`);
+        console.warn(`\n  ! ${err.message}`);
       }
     }
-    console.log(`  新增详情 ${n} 条`);
+    added += n;
+    console.log(`${col.products.length} 件商品${n ? `，获取详情 ${n} 条` : ''}`);
     db.fetchedAt = new Date().toISOString();
+    if (officialCharacters?.length) db.officialCharacters = officialCharacters;
     await fs.mkdir(path.dirname(OUT), { recursive: true });
     await fs.writeFile(OUT, JSON.stringify(db, null, 1));
+  }
+
+  console.log(`\n✓ 采集完成：${slugs.length} 个合集，获取商品详情 ${added} 条`);
+  const known = new Set(COLLECTIONS);
+  const fresh = (officialCharacters ?? []).filter((c) => !known.has(c.slug));
+  if (fresh.length) {
+    console.log('\n⚠ 官网出现了本站尚未收录的 IP：');
+    for (const c of fresh) console.log(`   - ${c.name}（官网合集 ${c.slug}）`);
+    console.log('  收录方法见 README「新增一个 IP」。');
   }
 }
 
