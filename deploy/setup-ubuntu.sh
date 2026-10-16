@@ -35,7 +35,7 @@ apt-get install -y nginx git curl xz-utils ca-certificates
 log "3/7 安装 Node.js ${NODE_MAJOR}（npmmirror 镜像）"
 if ! command -v node >/dev/null || [ "$(node -p 'process.versions.node.split(".")[0]')" -lt 20 ]; then
   FILE=$(curl -fsSL "${MIRROR}/latest-v${NODE_MAJOR}.x/SHASUMS256.txt" | awk '/linux-x64.tar.xz$/ {print $2}')
-  VERSION_DIR=$(echo "$FILE" | sed -E 's/^(node-v[0-9.]+)-linux-x64.tar.xz$/\1/')
+  VERSION_DIR="${FILE%.tar.xz}"  # 解压后的目录名，如 node-v24.9.0-linux-x64
   curl -fsSL "${MIRROR}/latest-v${NODE_MAJOR}.x/${FILE}" -o "/tmp/${FILE}"
   rm -rf /usr/local/lib/nodejs && mkdir -p /usr/local/lib/nodejs
   tar -xJf "/tmp/${FILE}" -C /usr/local/lib/nodejs
