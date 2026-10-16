@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Inter_Tight, Instrument_Serif, Noto_Serif_SC } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import "./fonts/noto-serif-sc.css";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
@@ -9,19 +10,20 @@ import { SearchPalette } from "@/components/search/SearchPalette";
 import { fetchedAt, getIPs } from "@/lib/data";
 import { SITE } from "@/lib/site";
 
-const interTight = Inter_Tight({ subsets: ["latin"], variable: "--font-inter-tight", display: "swap" });
-const instrument = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  variable: "--font-instrument",
+// 字体全部自托管（国内服务器无法访问 Google Fonts），由 scripts/fetch-fonts.mjs 下载
+const interTight = localFont({
+  src: "./fonts/InterTight-Latin.woff2",
+  weight: "100 900",
+  variable: "--font-inter-tight",
   display: "swap",
 });
-const notoSerif = Noto_Serif_SC({
-  weight: "700",
-  variable: "--font-noto-serif",
+const instrument = localFont({
+  src: [
+    { path: "./fonts/InstrumentSerif-Latin.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/InstrumentSerif-Italic-Latin.woff2", weight: "400", style: "italic" },
+  ],
+  variable: "--font-instrument",
   display: "swap",
-  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -53,7 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   const ips = getIPs();
   const navIPs = ips.slice(0, 12).map((ip) => ({ slug: ip.slug, name: ip.name, nameZh: ip.nameZh ?? ip.epithet, color: ip.theme.accent }));
   return (
-    <html lang="zh-CN" className={`${interTight.variable} ${instrument.variable} ${notoSerif.variable}`} suppressHydrationWarning>
+    <html lang="zh-CN" className={`${interTight.variable} ${instrument.variable}`} suppressHydrationWarning>
       <body className="min-h-svh bg-[var(--t-bg)] transition-colors duration-700">
         <a
           href="#main"

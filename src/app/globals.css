@@ -62,6 +62,8 @@
 }
 
 :root {
+  /* Noto Serif SC 以 @font-face 分片自托管（见 src/app/fonts/noto-serif-sc.css） */
+  --font-noto-serif: "Noto Serif SC";
   --t-bg: #f6f4f0;
   --t-surface: #ffffff;
   --t-accent: #ff5b3a;
