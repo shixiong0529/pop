@@ -3,7 +3,7 @@
 部署方式：代码托管在 GitHub，服务器从 GitHub 拉取代码，在服务器上构建，用 PM2 运行，再由 Nginx 对外提供服务。
 
 ```
-本地修改 → git push → GitHub → 服务器 git pull → pnpm build → pm2 reload
+本地修改 → git push → GitHub → 服务器 git pull → pnpm build → pm2 重启
 ```
 
 适用环境：Ubuntu 22.04 / 24.04，2 核 2 GiB 及以上。项目针对国内网络做了处理：
@@ -52,6 +52,14 @@ cd /var/www/pop && bash deploy/update.sh
 
 没有新提交时脚本会直接退出；依赖没有变化时会跳过安装。需要强制重新构建，就在命令末尾加 `--force`。
 
+> **一次性操作**：第一次更新到带「泡泡互动」聊天室的版本时，服务器上旧的更新脚本只会按原来的方式重启，聊天室还用不了。更新完成后再执行一次：
+>
+> ```bash
+> cd /var/www/pop && pm2 delete pop && pm2 start deploy/ecosystem.config.cjs && pm2 save
+> ```
+>
+> 之后的更新照常执行 `bash deploy/update.sh` 即可。
+
 官网出了新 IP、新系列或新单品时，先在 Mac 上更新数据再推送，步骤见 [README.md](README.md)「更新网站内容」。
 
 ## 三、可选：推送后自动部署（GitHub Actions）
@@ -85,7 +93,7 @@ cd /var/www/pop && bash deploy/update.sh
 ```bash
 pm2 status              # 查看运行状态
 pm2 logs pop            # 查看日志
-pm2 reload pop          # 平滑重启
+pm2 restart pop         # 重启站点（聊天中的页面会自动重连）
 systemctl reload nginx  # 重新加载 Nginx 配置
 ```
 
@@ -100,4 +108,24 @@ systemctl reload nginx  # 重新加载 Nginx 配置
    apt-get install -y certbot python3-certbot-nginx && certbot --nginx -d 你的域名
    ```
 
-3. 修改 `.env.production.local` 里的 `NEXT_PUBLIC_SITE_URL` 为 `https://你的域名`，然后执行一次 `bash deploy/update.sh`。站点地图和分享链接会使用这个地址。
+3. 修改 `.env.production.local` 里的 `NEXT_PUBLIC_SITE_URL` 为 `https://你的域名`，然后执行一次 `bash deploy/update.sh --force`。站点地图和分享链接会使用这个地址。
+
+## 六、泡泡互动聊天数据
+
+聊天室的账号和消息保存在 `/var/www/pop/data/chat.db`。这个文件不在 git 里，`git pull` 和重新部署都不会动它。Nginx 配置已经支持 WebSocket，不需要额外设置。
+
+设置管理员（先在网站上注册好账号）：
+
+```bash
+cd /var/www/pop && node scripts/chat-admin.mjs grant 你的用户名
+```
+
+备份数据库（网站运行中也可以执行，备份文件在 `data/backups/` 下）：
+
+```bash
+cd /var/www/pop && node scripts/chat-admin.mjs backup
+```
+
+从备份恢复：先 `pm2 stop pop`，把备份文件复制为 `data/chat.db`，并删除同目录下的 `chat.db-wal`、`chat.db-shm`，再 `pm2 start pop`。
+
+全部管理命令见 [README.md](README.md)「泡泡互动（聊天室）」。

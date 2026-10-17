@@ -14,6 +14,7 @@ const LINKS = [
   { href: "/", label: "首页", en: "Home" },
   { href: "/ips", label: "IP 系列馆", en: "IP Gallery" },
   { href: "/series", label: "系列图鉴", en: "Collection" },
+  { href: "/chat", label: "泡泡互动", en: "Community" },
   { href: "/about", label: "关于本站", en: "About" },
 ];
 
@@ -85,8 +86,8 @@ export function Nav({ ips }: { ips: NavIP[] }) {
                 aria-label="搜索（⌘K）"
               >
                 <SearchIcon />
-                <span className="hidden opacity-70 sm:inline">搜索 IP、系列、产品</span>
-                <kbd className="hidden rounded-md bg-[color-mix(in_oklab,var(--t-ink)_8%,transparent)] px-1.5 py-0.5 font-sans text-[11px] opacity-70 md:inline">
+                <span className="hidden opacity-70 sm:inline lg:hidden xl:inline">搜索 IP、系列、产品</span>
+                <kbd className="hidden rounded-md bg-[color-mix(in_oklab,var(--t-ink)_8%,transparent)] px-1.5 py-0.5 font-sans text-[11px] opacity-70 md:inline lg:hidden xl:inline">
                   ⌘K
                 </kbd>
               </button>

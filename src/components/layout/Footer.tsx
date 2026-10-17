@@ -34,6 +34,7 @@ export function Footer({ ips, fetchedAt }: { ips: FooterIP[]; fetchedAt: string 
               <li><Link className="hover:text-white" href="/ips">IP 系列馆</Link></li>
               <li><Link className="hover:text-white" href="/series">系列图鉴</Link></li>
               <li><Link className="hover:text-white" href="/favorites">我的收藏</Link></li>
+              <li><Link className="hover:text-white" href="/chat">泡泡互动</Link></li>
               <li><Link className="hover:text-white" href="/about">关于本站</Link></li>
             </ul>
           </div>

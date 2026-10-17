@@ -43,3 +43,7 @@ next-env.d.ts
 # 数据管线日志
 /data/*.log
 /data/official/log-*.txt
+
+# 泡泡互动聊天数据库
+/data/chat.db*
+/data/backups/
