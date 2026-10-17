@@ -29,7 +29,7 @@ pnpm build && pnpm start
 cd /var/www/pop && bash deploy/update.sh
 ```
 
-脚本会拉取最新代码；依赖文件有变化才重新安装；然后构建并平滑重启。没有新提交时会直接退出，不会白白构建。需要强制重新构建时加 `--force`：
+脚本会拉取最新代码；依赖文件有变化才重新安装；然后构建，并按 `deploy/ecosystem.config.cjs` 重启网站（重启时网站有几秒钟打不开，正在聊天的页面会自动重连）。没有新提交时会直接退出，不会白白构建。需要强制重新构建时加 `--force`：
 
 ```bash
 cd /var/www/pop && bash deploy/update.sh --force
