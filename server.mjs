@@ -1,5 +1,5 @@
 // 自定义服务器：同一个端口同时提供网站（Next.js）与「泡泡互动」聊天（/api/chat/* 与 Socket.IO）
-// 用法：pnpm dev（开发）/ pnpm start（生产，可加 -p 端口）
+// 用法：pnpm dev（开发，默认端口 3002）/ pnpm start（生产，默认端口 3000）；可加 -p 端口或设置 PORT
 import { createServer } from 'node:http';
 import next from 'next';
 import { createChat } from './chat/index.mjs';
@@ -7,7 +7,8 @@ import { createChat } from './chat/index.mjs';
 const argv = process.argv.slice(2);
 const portIndex = argv.findIndex((a) => a === '-p' || a === '--port');
 const dev = process.env.NODE_ENV !== 'production';
-const port = Number(portIndex >= 0 ? argv[portIndex + 1] : (process.env.PORT ?? 3000));
+// 开发默认用 3002，避免和本机其它项目抢 3000；服务器上由 PM2 配置指定 PORT=3000
+const port = Number(portIndex >= 0 ? argv[portIndex + 1] : (process.env.PORT ?? (dev ? 3002 : 3000)));
 const hostname = process.env.HOST ?? (dev ? 'localhost' : '127.0.0.1');
 
 let chat;

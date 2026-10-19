@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-10-16T14:25:39.278Z",
+ "fetchedAt": "2026-10-19T01:21:49.093Z",
  "collections": {
   "chaka": {
    "slug": "chaka",
@@ -3971,8 +3971,35 @@
    "mainImage": "https://prod-america-res.popmart.com/default/fd62010ea53b6697ae802e80124fcc37_____1500x480.jpg",
    "mainImagePc": "https://prod-america-res.popmart.com/default/dca8ad670b2666f3a44c54d9921f9824_____3840x680.jpg",
    "seoDescription": "POP MART original HIRONO mysterious IP is a core brand designer toy line with delicate emotional figurines, including HIRONO Echo series, Little Prince, Ghost figures, branded HIRONO phone cases and complete full-set blind boxes for US collectors.",
-   "total": 55,
+   "total": 57,
    "products": [
+    {
+     "id": "9302",
+     "title": "Hirono Snowman Figurine",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792139266765_bff139fa05ac583f685a523ab3d110a0.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139273832_2fe14cbe6691770b86465860d009c38a.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139273832_2e09fe60e770bcfbfe69cb722a4573d8.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139273832_7f733af4fafce34b7cca7d2e0c9f313f.jpg"
+     ],
+     "upTime": 1792713600,
+     "brand": "HIRONO",
+     "type": "normal"
+    },
+    {
+     "id": "9301",
+     "title": "Hirono × Kodak Click Figure",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792139165624_bff139fa05ac583f685a523ab3d110a0.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139171386_89ba55ff32f48ffaf3da08284f732bdd.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139171386_0308ba492f46f1ae38d9383dccaa157d.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139171386_8af847a411b8021b9c91857718ad4f67.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139171386_3dbee4b355d1a777cdcdf2ec590fbc35.jpg"
+     ],
+     "upTime": 1792713600,
+     "brand": "HIRONO",
+     "type": "normal"
+    },
     {
      "id": "8751",
      "title": "Hirono After Dark Series Fridge Magnet Blind Box",
@@ -4824,8 +4851,8 @@
    "id": 38,
    "name": "CRYBABY",
    "desc": "Crybaby is neither a boy nor a girl, it's not even limited to humans, it represents a deep emotion from within.",
-   "mainImage": "https://prod-america-res.popmart.com/default/20260508_195118_710989____crybaby-mob_____1500x480.jpg",
-   "mainImagePc": "https://prod-america-res.popmart.com/default/20260508_195122_876779____crybaby-pc_____3840x680.jpg",
+   "mainImage": "https://prod-america-res.popmart.com/default/124e8cb65b47e4e4fb266f3b0112c3af_____1500x480.jpg",
+   "mainImagePc": "https://prod-america-res.popmart.com/default/f72fc542cbd5f3e199e496c68eac26e7_____3840x680.jpg",
    "seoDescription": "POP MART lovely CRYBABY cute IP creates soft emotional art toys for daily collection, including Wild But Cutie blind boxes, trendy CRYBABY AirPod cases, cherry plush and Secret Crying Again limited figurines from our brand.",
    "total": 94,
    "products": [
@@ -13334,7 +13361,7 @@
    "mainImage": "https://prod-america-res.popmart.com/default/cd13a8606dd67962ace09df598da611f_____1500x480.jpg",
    "mainImagePc": "https://prod-america-res.popmart.com/default/fad004ae22f047f80947af9dbcf0c72a_____3840x680.jpg",
    "seoDescription": "POP MART self-developed SKULLPANDA art IP delivers atmospheric aesthetic collectibles exclusive to our brand, including SKULLPANDA blind boxes, fluffy SKULLPANDA plush, Sandman, Winter Symphony and You Found Me limited series sold in US store.",
-   "total": 89,
+   "total": 90,
    "products": [
     {
      "id": "8888",
@@ -13363,6 +13390,22 @@
       "https://prod-global-biz.popmart.com/globalAdmin/1789200715921_14ccad0bf2cd4110cbc1855ed35a11ed.jpg"
      ],
      "upTime": 1789689600,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
+     "id": "9305",
+     "title": "SKULLPANDA × ROBERT WUN The Innocence 1/6 Action Figure",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792139701977_bff139fa05ac583f685a523ab3d110a0.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708304_902cef58a738d2fe68b81e7a5dd90a52.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_0fc7ac742cb9764a1347445e34d0df62.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_d82ffbac4a79d5ab66acedc296b675bb.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_25acf92e72f693aec35b57a3e0e63361.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_5ec7af72132614d59d5b517028d7e595.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_718b87a7cb3b41bab6c21db1fd973ecb.jpg"
+     ],
+     "upTime": 1792713600,
      "brand": "SKULLPANDA",
      "type": "normal"
     },
@@ -45606,6 +45649,35 @@
    "designer": "",
    "url": "https://www.popmart.com/us/products/9300"
   },
+  "9301": {
+   "id": "9301",
+   "title": "Hirono × Kodak Click Figure",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 22, 2026 at 5:00 PM (PST)\nSIZE: Height: About 6.7cm/2.64inches\nMATERIAL: PVC /ABS\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139171386_89ba55ff32f48ffaf3da08284f732bdd.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139171386_0308ba492f46f1ae38d9383dccaa157d.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139171386_8af847a411b8021b9c91857718ad4f67.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139171386_3dbee4b355d1a777cdcdf2ec590fbc35.jpg"
+   ],
+   "toys": [],
+   "brand": "HIRONO",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9301"
+  },
+  "9302": {
+   "id": "9302",
+   "title": "Hirono Snowman Figurine",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 22, 2026 at 5:00 PM (PST)\nSIZE: Height: About 15cm/5.91inches\nMATERIAL: ABS/PVC/Polyamide\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139273832_2fe14cbe6691770b86465860d009c38a.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139273832_2e09fe60e770bcfbfe69cb722a4573d8.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139273832_7f733af4fafce34b7cca7d2e0c9f313f.jpg"
+   ],
+   "toys": [],
+   "brand": "HIRONO",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9302"
+  },
   "9304": {
    "id": "9304",
    "title": "MEGA a SKULLPANDA 400% Robert Wun-Vestige d'astre",
@@ -45618,6 +45690,23 @@
    "brand": "SKULLPANDA",
    "designer": "",
    "url": "https://www.popmart.com/us/products/9304"
+  },
+  "9305": {
+   "id": "9305",
+   "title": "SKULLPANDA × ROBERT WUN The Innocence 1/6 Action Figure",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 22, 2026 at 5:00 PM (PST)\nSIZE: Height: 24.5cm/9.65inches (including helmet)27.7cm / 10.91inches (including figure base)\nMATERIAL: PVC/ABS/POM/PA/PC/Polyester /Elastane\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139708304_902cef58a738d2fe68b81e7a5dd90a52.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_0fc7ac742cb9764a1347445e34d0df62.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_d82ffbac4a79d5ab66acedc296b675bb.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_25acf92e72f693aec35b57a3e0e63361.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_5ec7af72132614d59d5b517028d7e595.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_718b87a7cb3b41bab6c21db1fd973ecb.jpg"
+   ],
+   "toys": [],
+   "brand": "SKULLPANDA",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9305"
   },
   "9306": {
    "id": "9306",

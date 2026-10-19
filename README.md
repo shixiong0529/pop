@@ -12,7 +12,7 @@
 
 ```bash
 pnpm install
-pnpm dev          # http://localhost:3000，网站和聊天室一起启动
+pnpm dev          # http://localhost:3002，网站和聊天室一起启动
 ```
 
 生产构建：
@@ -57,7 +57,7 @@ cd /var/www/pop && bash deploy/update.sh --force
 
    结束时会打印一份摘要：新增了哪些系列、多少款单品，以及是否自动收录了新 IP。
 
-2. （可选）在本地预览新内容，启动后打开 http://localhost:3000：
+2. （可选）在本地预览新内容，启动后打开 http://localhost:3002：
 
    ```bash
    cd /Users/shixiong/Developer/pop && pnpm dev
