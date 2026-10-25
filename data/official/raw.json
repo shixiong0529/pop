@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-10-22T08:50:08.867Z",
+ "fetchedAt": "2026-10-25T06:01:50.446Z",
  "collections": {
   "chaka": {
    "slug": "chaka",
@@ -1541,8 +1541,22 @@
    "mainImage": "https://prod-america-res.popmart.com/default/ffcb91b415d6b9e734dca2428a04dc24_____1500x480.jpg",
    "mainImagePc": "https://prod-america-res.popmart.com/default/cb855fb9b4636add679e155060fe74d7_____3840x680.jpg",
    "seoDescription": "POP MART dreamy celestial 1001MOONS original IP focuses on star and moon art toys designed by our brand, including dream blind boxes and ornamental decorative figurines for display and collection.",
-   "total": 4,
+   "total": 5,
    "products": [
+    {
+     "id": "9054",
+     "title": "1001MOONS The Moonlight Gathering Guide Series Plush Doll Pendant",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792741520717_af94f73bec3cd33aeb5f7d75415388b4.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792741766114_fea0d0f1305745a63f197fb9512893f4.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792741534928_5b2806ad3d84acc97a8360ad93dd7382.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792741534928_af94f73bec3cd33aeb5f7d75415388b4.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792741534929_5daa33fd592ad9ef805d3d8803fb64da.jpg"
+     ],
+     "upTime": 1793318400,
+     "brand": "1001MOONS",
+     "type": "normal"
+    },
     {
      "id": "6355",
      "title": "1001MOONS Confession in the Wind · Moona (Variant)",
@@ -3950,10 +3964,10 @@
     {
      "id": "8843",
      "title": "The Attic of Oddities Series Figures",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1791877828528_9b437f257e34e963ddd25d2a75d671d3.jpg",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792755363011_1952a01898073d1e561b9b4f2e42cbd7.jpg",
      "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283312_b2dee9b05b698aee989c2a413fea33ef.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_b5e1924bf24ca8a4301b90355b45736c.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_4203c9939d41fd4e5d38c319852e5a18.jpg"
      ],
@@ -4857,6 +4871,20 @@
    "total": 94,
    "products": [
     {
+     "id": "9299",
+     "title": "CRYBABY Crying Round n Round Series - Vinyl Plush Pendant Blind Box",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792136657828_c7a7a31848f171eee0fc55352f45c1ee.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792136676008_72b8dcf9ed1a4c03c262d4907dc546d0.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792136676008_29537c46705403e4cc1c55610ff3acd3.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792136676008_c7a7a31848f171eee0fc55352f45c1ee.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792136676008_8db37f73237e60eea20c8033ecb1c521.jpg"
+     ],
+     "upTime": 1792713600,
+     "brand": "CRYBABY",
+     "type": "normal"
+    },
+    {
      "id": "8493",
      "title": "CRYBABY × Care Bears Series - Vinyl Plush Pendant Blind Box",
      "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1786093111032_40045cc2eeba84d73234f42ea863811c.jpg",
@@ -4901,6 +4929,20 @@
      "type": "normal"
     },
     {
+     "id": "9300",
+     "title": "CRYBABY Crying Round n Round Series Figures",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792138743688_ab85b415edceb8d1f5778235da5f8f9a.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792138753969_049a58484c31df21cc122828e6c5a63a.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792138759916_e87ca16099c8ebe7e306581319931bcf.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792138759916_ab85b415edceb8d1f5778235da5f8f9a.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792138759916_9651e4c7f0a4340106e9e21a40bcd2ec.jpg"
+     ],
+     "upTime": 1792713600,
+     "brand": "CRYBABY",
+     "type": "normal"
+    },
+    {
      "id": "8490",
      "title": "CRYBABY × Care Bears Series - Mini Bag Hanging Jewelry Case",
      "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1786092339863_03e92d64ae3519bc7cc25a1dd0adc51d.jpg",
@@ -4915,30 +4957,15 @@
      "type": "normal"
     },
     {
-     "id": "9299",
-     "title": "CRYBABY Crying Round n Round Series - Vinyl Plush Pendant Blind Box",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792136657828_c7a7a31848f171eee0fc55352f45c1ee.jpg",
+     "id": "1890",
+     "title": "CRYBABY Crying For Love Series-Vinyl Plush Hanging Card (Love You Cherry Much)",
+     "coverImg": "https://prod-america-res.popmart.com/default/20250115_140307_166474____1_crybaby-crying-for-love-series-vinyl-plush-hanging-card-love-you-cherry-much-_accessories_details_popmart-us_____1200x1200.jpg",
      "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1792136676008_72b8dcf9ed1a4c03c262d4907dc546d0.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792136676008_29537c46705403e4cc1c55610ff3acd3.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792136676008_c7a7a31848f171eee0fc55352f45c1ee.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792136676008_8db37f73237e60eea20c8033ecb1c521.jpg"
+      "https://prod-america-res.popmart.com/default/20250115_140316_948391____scene_crybaby-crying-for-love-series-vinyl-plush-hanging-card-love-you-cherry-much-_accessories_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250115_140316_952477____1_crybaby-crying-for-love-series-vinyl-plush-hanging-card-love-you-cherry-much-_accessories_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250115_140316_227842____2_crybaby-crying-for-love-series-vinyl-plush-hanging-card-love-you-cherry-much-_accessories_details_popmart-us_____1200x1200.jpg"
      ],
-     "upTime": 1792713600,
-     "brand": "CRYBABY",
-     "type": "normal"
-    },
-    {
-     "id": "9300",
-     "title": "CRYBABY Crying Round n Round Series Figures",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792138743688_ab85b415edceb8d1f5778235da5f8f9a.jpg",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1792138753969_049a58484c31df21cc122828e6c5a63a.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792138759916_e87ca16099c8ebe7e306581319931bcf.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792138759916_ab85b415edceb8d1f5778235da5f8f9a.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792138759916_9651e4c7f0a4340106e9e21a40bcd2ec.jpg"
-     ],
-     "upTime": 1792713600,
+     "upTime": 1737684000,
      "brand": "CRYBABY",
      "type": "normal"
     },
@@ -4962,15 +4989,19 @@
      "type": "normal"
     },
     {
-     "id": "1890",
-     "title": "CRYBABY Crying For Love Series-Vinyl Plush Hanging Card (Love You Cherry Much)",
-     "coverImg": "https://prod-america-res.popmart.com/default/20250115_140307_166474____1_crybaby-crying-for-love-series-vinyl-plush-hanging-card-love-you-cherry-much-_accessories_details_popmart-us_____1200x1200.jpg",
+     "id": "6281",
+     "title": "CRYBABY Cry Me an Ocean Series Earphone Bag",
+     "coverImg": "https://prod-america-res.popmart.com/default/20260508_174801_000630____single-box_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
      "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20250115_140316_948391____scene_crybaby-crying-for-love-series-vinyl-plush-hanging-card-love-you-cherry-much-_accessories_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250115_140316_952477____1_crybaby-crying-for-love-series-vinyl-plush-hanging-card-love-you-cherry-much-_accessories_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250115_140316_227842____2_crybaby-crying-for-love-series-vinyl-plush-hanging-card-love-you-cherry-much-_accessories_details_popmart-us_____1200x1200.jpg"
+      "https://prod-america-res.popmart.com/default/20260508_180537_737865____3_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260508_180537_986421____2_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260508_180537_002964____4_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260508_180537_377125____scene_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260508_180537_601782____secret_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260508_180537_296047____single-box_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260508_180537_781695____whole-sets_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg"
      ],
-     "upTime": 1737684000,
+     "upTime": 1778810400,
      "brand": "CRYBABY",
      "type": "normal"
     },
@@ -4983,23 +5014,6 @@
       "https://prod-global-biz.popmart.com/globalAdmin/1785810865759_80c194bd337ada4b5f77974d35c90860.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1785810865759_04cdf1e58b831105ab4d2f5c99196654.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1785810865759_7ad6e5eda134da7859a522f9ecd52421.jpg"
-     ],
-     "upTime": 1778810400,
-     "brand": "CRYBABY",
-     "type": "normal"
-    },
-    {
-     "id": "6281",
-     "title": "CRYBABY Cry Me an Ocean Series Earphone Bag",
-     "coverImg": "https://prod-america-res.popmart.com/default/20260508_174801_000630____single-box_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20260508_180537_737865____3_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260508_180537_986421____2_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260508_180537_002964____4_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260508_180537_377125____scene_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260508_180537_601782____secret_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260508_180537_296047____single-box_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260508_180537_781695____whole-sets_crybaby-cry-me-an-ocean-series-earphone-bag_accessories_details_pop-mart-us_____1200x1200.jpg"
      ],
      "upTime": 1778810400,
      "brand": "CRYBABY",
@@ -5705,10 +5719,10 @@
     {
      "id": "8843",
      "title": "The Attic of Oddities Series Figures",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1791877828528_9b437f257e34e963ddd25d2a75d671d3.jpg",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792755363011_1952a01898073d1e561b9b4f2e42cbd7.jpg",
      "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283312_b2dee9b05b698aee989c2a413fea33ef.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_b5e1924bf24ca8a4301b90355b45736c.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_4203c9939d41fd4e5d38c319852e5a18.jpg"
      ],
@@ -6407,7 +6421,7 @@
     {
      "id": "9061",
      "title": "Twinkle Twinkle Live the Ordinary Series Figures",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792056319815_54e9a046e44d10cb7b1a57ddb54ef496.jpg",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1790327223853_a1c7d8ad9977326fd098dc73f2440ffc.jpg",
      "bannerImages": [
       "https://prod-global-biz.popmart.com/globalAdmin/1792032017175_c9a2081d46418d6c4660aac08c855b2d.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1790327253688_45a0bd2f4123458ca2c782ad23f1225b.jpg",
@@ -7141,10 +7155,10 @@
     {
      "id": "8843",
      "title": "The Attic of Oddities Series Figures",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1791877828528_9b437f257e34e963ddd25d2a75d671d3.jpg",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792755363011_1952a01898073d1e561b9b4f2e42cbd7.jpg",
      "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283312_b2dee9b05b698aee989c2a413fea33ef.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_b5e1924bf24ca8a4301b90355b45736c.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_4203c9939d41fd4e5d38c319852e5a18.jpg"
      ],
@@ -7368,7 +7382,7 @@
    "mainImage": "https://prod-america-res.popmart.com/default/1ae84a1b3cb4cd76f42edda34134aa87_____6250x2000.jpg",
    "mainImagePc": "https://prod-america-res.popmart.com/default/efd9f51ef482f923ca265ad03d4cac46_____3840x680.jpg",
    "seoDescription": "POP MART classic fairy tale PUCKY Baby original IP is a long-time fan-favorite brand toy line, covering fairy tale blind boxes, soft plush, oversized MEGA dolls and complete original full-set collections for global collectors.",
-   "total": 25,
+   "total": 24,
    "products": [
     {
      "id": "8689",
@@ -7637,33 +7651,6 @@
       "https://prod-america-res.popmart.com/default/20231218_161627_004123__1200x1200.jpg"
      ],
      "upTime": 1703210400,
-     "brand": "PUCKY",
-     "type": "normal"
-    },
-    {
-     "id": "223",
-     "title": "PUCKY-Relax Beanie Series",
-     "coverImg": "https://prod-america-res.popmart.com/default/single_Wm2upXvfTl_1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/07_ynKC3wyEPw_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/scene_01_83bvz0JgH3_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/04_dTQeOmidYq_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/secret_UIyxG9QabJ_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/12_YgMyZfuona_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/01_lqPKJKzE85_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/06_tMt1BCJIkl_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/02_kZJ27FUR1a_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/03_YU75GLox9q_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/05_4Xj6yJAcJO_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/08_9KVvDeRXuO_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/09_qMDizNcX45_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/10_g2toboVNi8_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/11_GdBknPQaVN_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/scene_02_jSfYNCKyFY_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/single_qEPxPzoIFh_1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/whole_set_hp8Tyob42W_1200x1200.jpg"
-     ],
-     "upTime": 1683252000,
      "brand": "PUCKY",
      "type": "normal"
     },
@@ -8445,19 +8432,36 @@
    "mainImage": "https://prod-america-res.popmart.com/default/9ca95e7536b436fbb555bf0a91499aee_____1500x480.jpg",
    "mainImagePc": "https://prod-america-res.popmart.com/default/3684cb8df97aab03731fc4204d54f38e_____3840x680.jpg",
    "seoDescription": "POP MART sweet fruit-themed Peach Riot original IP supplies cute limited collectibles, including Halloween exclusive blind boxes, Poppy Receptionist mini plush and complete full-set figurines released by our brand for US toy lovers.",
-   "total": 26,
+   "total": 32,
    "products": [
     {
-     "id": "6476",
-     "title": "Peach Riot Fruit Punch Series Plush Doll Pendant",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1785323594678_4b829be5792896f93550292a533fcd48.jpg",
+     "id": "9413",
+     "title": "Peach Riot Sugar Mode Series Figures",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792745474932_bc2df3615875b44a7c5c85a03e3dd775.jpg",
      "bannerImages": [
-      "https://prod-america-res.popmart.com/default/64a7022050f4d4ad9796fb0fd4de9700_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/1dd3fc66c04aebfecf7be778ec5b6618_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/bf1713bba84309e7a44effb7cd1fecdc_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/15651f043a2d040d6d08127ac26b7d2f_____1200x1200.jpg"
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_e4923170e78f3ebb99bd7dfa27d82e2b.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_0e05887b1e9ce27ab961804f2bdc2c48.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_830076624682255b027d573942ea8657.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_53f00201b478d3986f91b0c5b99386ef.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_34adecdddc1963c253cb8ea024b1f599.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_bc2df3615875b44a7c5c85a03e3dd775.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_1f9a5ace0d02aca416df32122f234bae.jpg"
      ],
-     "upTime": 1780624800,
+     "upTime": 1793318400,
+     "brand": "Peach Riot",
+     "type": "normal"
+    },
+    {
+     "id": "9414",
+     "title": "Peach Riot × KPop Demon Hunters Series Plush Doll Pendant",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792750919886_6512bd43d9caa6e02c990b0a82652dca.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792750931911_45c48cce2e2d7fbdea1afc51c7c6ad26.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792750931910_c81e728d9d4c2f636f067f89cc14862c.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792750931911_6512bd43d9caa6e02c990b0a82652dca.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792750931911_c20ad4d76fe97759aa27a0c99bff6710.jpg"
+     ],
+     "upTime": 1793318400,
      "brand": "Peach Riot",
      "type": "normal"
     },
@@ -8506,6 +8510,37 @@
       "https://prod-america-res.popmart.com/default/20240419_152419_637309__1200x1200.jpg"
      ],
      "upTime": 1714096800,
+     "brand": "Peach Riot",
+     "type": "normal"
+    },
+    {
+     "id": "4194",
+     "title": "Peach Riot Winter Break OOTD Series 1/8 Action Figure",
+     "coverImg": "https://prod-america-res.popmart.com/default/20251121_160132_533513____single-box_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20251121_183626_330436____3_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20251121_183626_378170____2_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20251121_183626_423737____4_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20251121_183627_016321____scene_1_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20251121_183627_197698____scene_2_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20251121_183627_148929____single-box_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20251121_183627_417862____whole-sets_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg"
+     ],
+     "upTime": 1764295200,
+     "brand": "Peach Riot",
+     "type": "normal"
+    },
+    {
+     "id": "6476",
+     "title": "Peach Riot Fruit Punch Series Plush Doll Pendant",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1785323594678_4b829be5792896f93550292a533fcd48.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/64a7022050f4d4ad9796fb0fd4de9700_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/1dd3fc66c04aebfecf7be778ec5b6618_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/bf1713bba84309e7a44effb7cd1fecdc_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/15651f043a2d040d6d08127ac26b7d2f_____1200x1200.jpg"
+     ],
+     "upTime": 1780624800,
      "brand": "Peach Riot",
      "type": "normal"
     },
@@ -8559,19 +8594,69 @@
      "type": "normal"
     },
     {
-     "id": "4194",
-     "title": "Peach Riot Winter Break OOTD Series 1/8 Action Figure",
-     "coverImg": "https://prod-america-res.popmart.com/default/20251121_160132_533513____single-box_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
+     "id": "9410",
+     "title": "Peach Riot Sugar Mode Series - Earphone Case",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792744386098_8871c9af892e8d8e79530714d278dff6.jpg",
      "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20251121_183626_330436____3_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20251121_183626_378170____2_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20251121_183626_423737____4_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20251121_183627_016321____scene_1_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20251121_183627_197698____scene_2_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20251121_183627_148929____single-box_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20251121_183627_417862____whole-sets_peach-riot-winter-break-ootd-series-18-action-figure_bjd_details_pop-mart-us_____1200x1200.jpg"
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_8f77a461f039107f9d05084902b551ba.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_d3e322bb1966fb26737b28f1a58d4461.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_b49996a106d9714d2c3e11a1c55f35ec.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_66d2f531d3f6b4a00dea49b2158d4214.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_ee2e06a5242fd47b84e573fa102784ad.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744409531_8871c9af892e8d8e79530714d278dff6.jpg"
      ],
-     "upTime": 1764295200,
+     "upTime": 1793318400,
+     "brand": "Peach Riot",
+     "type": "normal"
+    },
+    {
+     "id": "9409",
+     "title": "Peach Riot Sugar Mode Series - Short Lanyard Charm",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792744077809_f2b68fedd83f91afc78911a0b25177d4.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_b0c9d9ab01fe30fbab67c368903890ed.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_82c780a84340c5d5e1a37789e93c3877.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_d9c7e63c183be16460ad4f2be5339a5a.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_564b4f368e5abf5918ec9ea0874fa426.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_34f290b772a489e18bf8f7b4ac85f12d.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_f2b68fedd83f91afc78911a0b25177d4.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_78e9649e7d77272408c20958b157b1ef.jpg"
+     ],
+     "upTime": 1793318400,
+     "brand": "Peach Riot",
+     "type": "normal"
+    },
+    {
+     "id": "9411",
+     "title": "Peach Riot Sugar Mode Series - Modular Bracelet",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792744725988_c6f4d86913c60590d577c8c0a7243004.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_78302fc78f4747a2d00cb99867838416.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_5991a70e5232253b5abda2e4920cb2a5.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_84ec87cf448820176a9bd9ff0f41fde9.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_144826131d558d7821cb18bebb7bb3b7.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_34f290b772a489e18bf8f7b4ac85f12d.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_9d3ad873fe2d23a4be3869735a11aadc.jpg"
+     ],
+     "upTime": 1793318400,
+     "brand": "Peach Riot",
+     "type": "normal"
+    },
+    {
+     "id": "9412",
+     "title": "Peach Riot Sugar Mode Series - Card Holder",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792745150898_0156ebd85425c6e0f0970d9561533d52.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745163665_65381545103ba4dcd3c802863e51e3c9.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745163665_9abcb3a7d6834dbac2d59d7d1a49425f.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745163665_792e0250599dedc065ab88a88d79cdef.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_8d6de4904c7e47587ae56e46526b3f6b.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_caaa13517afaa310a2c122de42d716d5.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_327c4bae809e384baa47989138bc6f18.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_0156ebd85425c6e0f0970d9561533d52.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_15f3a55b3600f68e2437699d01fa270e.jpg"
+     ],
+     "upTime": 1793318400,
      "brand": "Peach Riot",
      "type": "normal"
     },
@@ -8935,7 +9020,7 @@
    "mainImage": "https://prod-america-res.popmart.com/default/5c8ac05f6972f322d8ef5c11dde8b5cf_____1500x480.jpg",
    "mainImagePc": "https://prod-america-res.popmart.com/default/2a48cdcfdbc47eb8d85b4d8379b119a1_____3840x680.jpg",
    "seoDescription": "POP MART original IP The Monsters Labubu series is our brand’s most iconic art toy line, including famous Big Into Energy Labubu, sweet Labubu Macaron blind boxes, portable Labubu keychains and unique Zimomo full-set blind boxes with full US stock.",
-   "total": 109,
+   "total": 110,
    "products": [
     {
      "id": "9161",
@@ -9504,6 +9589,17 @@
       "https://prod-global-biz.popmart.com/globalAdmin/1792139885885_de572f192874b4b6d70a420486328a57.jpg"
      ],
      "upTime": 1792713600,
+     "brand": "THE MONSTERS",
+     "type": "normal"
+    },
+    {
+     "id": "9172",
+     "title": "THE MONSTERS 10th Aniversary Exhibition Limited Edition - Marker Set",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1791776314198_4609d0867b8a7c7b8159e12c7990d135.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1791776318916_4609d0867b8a7c7b8159e12c7990d135.jpg"
+     ],
+     "upTime": 1792108800,
      "brand": "THE MONSTERS",
      "type": "normal"
     },
@@ -10717,8 +10813,274 @@
    "mainImage": "https://prod-america-res.popmart.com/default/760eb8424daf6b737f57fc2995ab25ba_____1500x480.jpg",
    "mainImagePc": "https://prod-america-res.popmart.com/default/b3eb5afd04cfb6a9b983af0262487e9f_____3840x680.jpg",
    "seoDescription": "POP MART iconic MOLLY classic IP is the brand’s representative original art toy, covering MOLLY Daily blind boxes, oversized MEGA dolls, official Disney collabs and limited POP MART MOLLY collectibles for worldwide fans.",
-   "total": 160,
+   "total": 165,
    "products": [
+    {
+     "id": "9405",
+     "title": "Angry Molly [PLAY] Disney Princess Series Plush Pendant",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792742223805_bdf8a4a6e521161ab0ef9ad67b1c4c6c.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792742237287_a9e3ce38d919020f3ac119bf72183795.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792742245823_dda617079bdf198cdbd98d890d31fb66.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792742245823_bdf8a4a6e521161ab0ef9ad67b1c4c6c.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792742245823_c7cfc0aaa189d9e9eaf73b437b167840.jpg"
+     ],
+     "upTime": 1793318400,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "9406",
+     "title": "BABY MOLLY Disney Princess Series MINI Action Figure",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792742699230_1314b7bf7a89427237e11f32a437b9c0.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792742712176_e275bb5bfa29500db8630a7f5a1e9828.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792742712176_17660d019c73eb6285047454387dd4a1.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792742712177_1314b7bf7a89427237e11f32a437b9c0.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792742712177_a0b5ed4ca88c2cdbba8868897f6361c4.jpg"
+     ],
+     "upTime": 1793318400,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "9408",
+     "title": "MOLLY Rapunzel 1/8 Action Figure",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792743290772_bff139fa05ac583f685a523ab3d110a0.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_3bf070093da63d7abc27b7f313ea1fef.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_180bac1966610fcb7d82cd0a8c31b7ce.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_e60fec45e2304e20092e8b456fa70ed2.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_4e635a425f6990c243b4674098ff98c4.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_bab4c2f620f0c5afd883653d42288447.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_c44abd3c912924d1a18ebafdff1b3ac2.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_34eac252d5bb330959bfc715340d5ca2.jpg"
+     ],
+     "upTime": 1793318400,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "8909",
+     "title": "MEGA SPACE MOLLY DUCATI Vinyl Pendant",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1790157356415_9f29d944c3d11c26193541d4a2146ded.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1789202653276_7a1c35964aa09d01205befb834f2d082.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1789202656497_814bf089d1ec7a4ef9939b9596c3199b.jpg"
+     ],
+     "upTime": 1789689600,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "9407",
+     "title": "MEGA ROYAL MOLLY 100% Lustre of Liuli · Golden Hour",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792743073303_bff139fa05ac583f685a523ab3d110a0.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743083555_4433e18c7f20f9519979843bd3b3b66e.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743083555_a0ceec497a60d4e6984c74657ea91244.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792743083555_3882e39fbc754bc9db32fd8dc8db9cf8.jpg"
+     ],
+     "upTime": 1793318400,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "8687",
+     "title": "MEGA ROYAL MOLLY 100% Series 1",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792054681346_ac00a65c488ced660bdb28e28311bd78.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792054677946_ac00a65c488ced660bdb28e28311bd78.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1787305059850_e6339472f41646f2d68262850ed1e8eb.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1787305059850_92174ace1b5c95302327e9839914e0af.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1787305059850_11df078c992986e6cb9fea6c3e809830.jpg"
+     ],
+     "upTime": 1787882400,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "8425",
+     "title": "Baby Molly Buggy Roam Series - Vinyl Plush Pendant Blind Box",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1789036742358_18a52c4abebab954d57cf30f3afd6629.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1788231479310_2ec10cc1ee4bafe6dec2c86606e79fde.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785489939766_dd7c701c7887ca7e33ee4776b25044a9.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785489942472_75db998f11d949107612ecda1d43929f.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785489942472_8c590f0d4a9475eb052a4edb770c97ed.jpg"
+     ],
+     "upTime": 1786068000,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "2235",
+     "title": "Baby Molly Pocket Friends Series-Vinyl Plush Pendant Blind Box",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1789035315905_14d2aaf4a1bed7bc75953bd17d4ceac3.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20250516_153004_478497____2_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250516_153004_309856____3_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250516_153004_436255____4_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250516_153004_677807____5_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250516_153004_164892____6_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250516_153004_167321____scene_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250516_153004_927699____secret_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250516_153004_170099____single-box_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250516_153004_054240____whole-sets_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250516_153004_957792____1_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg"
+     ],
+     "upTime": 1747965600,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "6078",
+     "title": "MOLLY Scenery Along the Way 20th Anniversary Series Figures",
+     "coverImg": "https://prod-america-res.popmart.com/default/20260327_172533_399009____single-box_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20260327_172547_156275____2_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_172547_417730____3_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_172547_970531____4_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_172547_245365____5_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_172547_889946____scene_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_172547_556430____secret_1_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_172547_597116____secret_2_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_172547_266995____single-box_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_172547_048461____whole-sets_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg"
+     ],
+     "upTime": 1775181600,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "6069",
+     "title": "Baby Molly 20th Anniversary Vinyl Plush Blister Pack",
+     "coverImg": "https://prod-america-res.popmart.com/default/20260327_170044_351025____1_baby-molly-20th-anniversary-vinyl-plush-blister-pack_details_pop-mart-us_____1200x1200.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20260327_170057_802441____2_baby-molly-20th-anniversary-vinyl-plush-blister-pack_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_170057_890857____3_baby-molly-20th-anniversary-vinyl-plush-blister-pack_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20260327_170057_528425____1_baby-molly-20th-anniversary-vinyl-plush-blister-pack_details_pop-mart-us_____1200x1200.jpg"
+     ],
+     "upTime": 1775181600,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "5170",
+     "title": "MEGA ROYAL MOLLY 400% Snow White",
+     "coverImg": "https://prod-america-res.popmart.com/default/20251212_175532_696842____1_mega-royal-molly-400-snow-white_mega_details_pop-mart-us_____1200x1200.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20251212_175543_703800____2_mega-royal-molly-400-snow-white_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20251212_175544_790208____3_mega-royal-molly-400-snow-white_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20251212_175543_455675____1_mega-royal-molly-400-snow-white_mega_details_pop-mart-us_____1200x1200.jpg"
+     ],
+     "upTime": 1766109600,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "6474",
+     "title": "MEGA SPACE MOLLY 400% Ashley Wood",
+     "coverImg": "https://prod-america-res.popmart.com/default/dec4a267b1572ac66e6ae5ef4b9cd8ec_____1200x1200.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/486882a2545d7fe41cd7e4dccad71226_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/2d0885f91cf2754a7cf803425b09bd69_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/54846daf31830f1df08bb2b1015314ff_____1200x1200.jpg"
+     ],
+     "upTime": 1780624800,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "3152",
+     "title": "MEGA SPACE MOLLY 100% Series4",
+     "coverImg": "https://prod-america-res.popmart.com/default/20250725_153152_153831____single-box_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20250725_153211_769557____scene_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250725_153211_079524____1_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250725_153211_580166____2_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250725_153211_937118____3_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250725_153211_673685____5_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250725_153211_795047____secret_1_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250725_153211_777561____secret_2_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250725_153211_494058____4_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250725_153211_671530____single-box_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250725_153211_474302____whole-sets_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg"
+     ],
+     "upTime": 1754013600,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "8138",
+     "title": "MOLLY The Wheel of Time 20th Anniversary Series Figures",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1783674911232_31995401ac6e7dceb86b236e199843f9.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1788230703430_831e6019dac91367b41dcfcc56dbdcfd.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1783674944017_a634d7138bd74da2283e0904bc71490f.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1783674944017_31995401ac6e7dceb86b236e199843f9.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1783674944017_d054443b17e200697d9b77d2f8a546b3.jpg"
+     ],
+     "upTime": 1784253600,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "5997",
+     "title": "MEGA ROYAL MOLLY 400% Mickey and Friends-Happy Easter",
+     "coverImg": "https://prod-america-res.popmart.com/default/20260313_173135_959551____1_mega-1_____1200x1200.JPG",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20260313_173143_599170____2_mega-1_____1200x1200.JPG",
+      "https://prod-america-res.popmart.com/default/20260313_173143_929615____3_mega-1_____1200x1200.JPG",
+      "https://prod-america-res.popmart.com/default/20260313_173143_464793____scene_-1_____1200x1200.JPG",
+      "https://prod-america-res.popmart.com/default/20260313_173143_025998____1_mega-1_____1200x1200.JPG"
+     ],
+     "upTime": 1773972000,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "8446",
+     "title": "Angry Molly × Crocs \"Angry Cheese\" Co-branded Figurine",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1785488676620_de5b712c4af3ffad99cc03b34d6ea5eb.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_de5b712c4af3ffad99cc03b34d6ea5eb.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_68e4f73c11af990969f706081b2b66b8.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_4e23076c7b9d32a215caad64455a00f5.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_97e856cc462c4ceb414e7287eac36185.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_05b6023075d8c546a4fa4f651864c5ed.jpg"
+     ],
+     "upTime": 1786068000,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
+    {
+     "id": "1974",
+     "title": "MEGA SPACE MOLLY 400% Hello Kitty and Friends Series",
+     "coverImg": "https://prod-america-res.popmart.com/default/20250107_100844_024763____single-box_____800x800.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1786009107618_1679091c5a880faf6fb5e6087eb1b2dc.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1786009137464_29bbd30a1c8955949ae71dc847be7ee8.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1786009137464_35fde48ea4416fda74e52a934c5c112a.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1786009147660_747108c0ff0dd279f5f7d07be375a364.jpg"
+     ],
+     "upTime": 1738893600,
+     "brand": "POP MART",
+     "type": "normal"
+    },
+    {
+     "id": "9303",
+     "title": "MEGA ROYAL MOLLY 400% Lustre of Liuli·Moonlight",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792726309354_bff139fa05ac583f685a523ab3d110a0.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792726315280_a98dbfb0754927eb82bc4928afdb4c66.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792726315280_994f147876c87d00dd0c3235e651d181.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792726315279_95d541551f28a0f4f98663f15c018952.jpg"
+     ],
+     "upTime": 1792735200,
+     "brand": "MOLLY",
+     "type": "normal"
+    },
     {
      "id": "8954",
      "title": "MEGA SPACE MOLLY 400% Iconic Coca-Cola",
@@ -10754,122 +11116,6 @@
       "https://prod-global-biz.popmart.com/globalAdmin/1789806500538_fca15cf1ba5831e33ef18de2495b19d5.jpg"
      ],
      "upTime": 1790294400,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "8909",
-     "title": "MEGA SPACE MOLLY DUCATI Vinyl Pendant",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1790157356415_9f29d944c3d11c26193541d4a2146ded.jpg",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1789202653276_7a1c35964aa09d01205befb834f2d082.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1789202656497_814bf089d1ec7a4ef9939b9596c3199b.jpg"
-     ],
-     "upTime": 1789689600,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "8425",
-     "title": "Baby Molly Buggy Roam Series - Vinyl Plush Pendant Blind Box",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1789036742358_18a52c4abebab954d57cf30f3afd6629.jpg",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1788231479310_2ec10cc1ee4bafe6dec2c86606e79fde.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785489939766_dd7c701c7887ca7e33ee4776b25044a9.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785489942472_75db998f11d949107612ecda1d43929f.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785489942472_8c590f0d4a9475eb052a4edb770c97ed.jpg"
-     ],
-     "upTime": 1786068000,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "8687",
-     "title": "MEGA ROYAL MOLLY 100% Series 1",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792054681346_ac00a65c488ced660bdb28e28311bd78.jpg",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1792054677946_ac00a65c488ced660bdb28e28311bd78.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1787305059850_e6339472f41646f2d68262850ed1e8eb.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1787305059850_92174ace1b5c95302327e9839914e0af.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1787305059850_11df078c992986e6cb9fea6c3e809830.jpg"
-     ],
-     "upTime": 1787882400,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "1974",
-     "title": "MEGA SPACE MOLLY 400% Hello Kitty and Friends Series",
-     "coverImg": "https://prod-america-res.popmart.com/default/20250107_100844_024763____single-box_____800x800.png",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1786009107618_1679091c5a880faf6fb5e6087eb1b2dc.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1786009137464_29bbd30a1c8955949ae71dc847be7ee8.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1786009137464_35fde48ea4416fda74e52a934c5c112a.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1786009147660_747108c0ff0dd279f5f7d07be375a364.jpg"
-     ],
-     "upTime": 1738893600,
-     "brand": "POP MART",
-     "type": "normal"
-    },
-    {
-     "id": "3152",
-     "title": "MEGA SPACE MOLLY 100% Series4",
-     "coverImg": "https://prod-america-res.popmart.com/default/20250725_153152_153831____single-box_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20250725_153211_769557____scene_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250725_153211_079524____1_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250725_153211_580166____2_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250725_153211_937118____3_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250725_153211_673685____5_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250725_153211_795047____secret_1_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250725_153211_777561____secret_2_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250725_153211_494058____4_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250725_153211_671530____single-box_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250725_153211_474302____whole-sets_mega-space-molly-100-series4_mega_details_pop-mart-us_____1200x1200.jpg"
-     ],
-     "upTime": 1754013600,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "8446",
-     "title": "Angry Molly × Crocs \"Angry Cheese\" Co-branded Figurine",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1785488676620_de5b712c4af3ffad99cc03b34d6ea5eb.jpg",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_de5b712c4af3ffad99cc03b34d6ea5eb.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_68e4f73c11af990969f706081b2b66b8.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_4e23076c7b9d32a215caad64455a00f5.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_97e856cc462c4ceb414e7287eac36185.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785489396593_05b6023075d8c546a4fa4f651864c5ed.jpg"
-     ],
-     "upTime": 1786068000,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "8138",
-     "title": "MOLLY The Wheel of Time 20th Anniversary Series Figures",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1783674911232_31995401ac6e7dceb86b236e199843f9.jpg",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1788230703430_831e6019dac91367b41dcfcc56dbdcfd.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1783674944017_a634d7138bd74da2283e0904bc71490f.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1783674944017_31995401ac6e7dceb86b236e199843f9.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1783674944017_d054443b17e200697d9b77d2f8a546b3.jpg"
-     ],
-     "upTime": 1784253600,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "6474",
-     "title": "MEGA SPACE MOLLY 400% Ashley Wood",
-     "coverImg": "https://prod-america-res.popmart.com/default/dec4a267b1572ac66e6ae5ef4b9cd8ec_____1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/486882a2545d7fe41cd7e4dccad71226_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/2d0885f91cf2754a7cf803425b09bd69_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/54846daf31830f1df08bb2b1015314ff_____1200x1200.jpg"
-     ],
-     "upTime": 1780624800,
      "brand": "MOLLY",
      "type": "normal"
     },
@@ -10914,20 +11160,6 @@
      "type": "normal"
     },
     {
-     "id": "5997",
-     "title": "MEGA ROYAL MOLLY 400% Mickey and Friends-Happy Easter",
-     "coverImg": "https://prod-america-res.popmart.com/default/20260313_173135_959551____1_mega-1_____1200x1200.JPG",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20260313_173143_599170____2_mega-1_____1200x1200.JPG",
-      "https://prod-america-res.popmart.com/default/20260313_173143_929615____3_mega-1_____1200x1200.JPG",
-      "https://prod-america-res.popmart.com/default/20260313_173143_464793____scene_-1_____1200x1200.JPG",
-      "https://prod-america-res.popmart.com/default/20260313_173143_025998____1_mega-1_____1200x1200.JPG"
-     ],
-     "upTime": 1773972000,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
      "id": "7837",
      "title": "MEGA ROYAL MOLLY 400% Childishness 2026",
      "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1781257456412_4c903231aeb8009c5a17776fd964899b.jpg",
@@ -10938,19 +11170,6 @@
       "https://prod-global-biz.popmart.com/globalAdmin/1781256961471_391800063e25c58076aa7dff5a6af9cf.jpg"
      ],
      "upTime": 1781834400,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "5170",
-     "title": "MEGA ROYAL MOLLY 400% Snow White",
-     "coverImg": "https://prod-america-res.popmart.com/default/20251212_175532_696842____1_mega-royal-molly-400-snow-white_mega_details_pop-mart-us_____1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20251212_175543_703800____2_mega-royal-molly-400-snow-white_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20251212_175544_790208____3_mega-royal-molly-400-snow-white_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20251212_175543_455675____1_mega-royal-molly-400-snow-white_mega_details_pop-mart-us_____1200x1200.jpg"
-     ],
-     "upTime": 1766109600,
      "brand": "MOLLY",
      "type": "normal"
     },
@@ -11009,38 +11228,6 @@
       "https://prod-america-res.popmart.com/default/20260327_173110_879961____single-box_molly-scenery-along-the-way-series-fridge-magnet-blind-box_accessories_details_pop-mart-us_____1200x1200.jpg",
       "https://prod-america-res.popmart.com/default/20260327_173110_176909____whole-sets_molly-scenery-along-the-way-series-fridge-magnet-blind-box_accessories_details_pop-mart-us_____1200x1200.jpg",
       "https://prod-america-res.popmart.com/default/20260327_173110_092707____1_molly-scenery-along-the-way-series-fridge-magnet-blind-box_accessories_details_pop-mart-us_____1200x1200.jpg"
-     ],
-     "upTime": 1775181600,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "6078",
-     "title": "MOLLY Scenery Along the Way 20th Anniversary Series Figures",
-     "coverImg": "https://prod-america-res.popmart.com/default/20260327_172533_399009____single-box_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20260327_172547_156275____2_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_172547_417730____3_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_172547_970531____4_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_172547_245365____5_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_172547_889946____scene_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_172547_556430____secret_1_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_172547_597116____secret_2_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_172547_266995____single-box_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_172547_048461____whole-sets_molly-scenery-along-the-way-20th-anniversary-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg"
-     ],
-     "upTime": 1775181600,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "6069",
-     "title": "Baby Molly 20th Anniversary Vinyl Plush Blister Pack",
-     "coverImg": "https://prod-america-res.popmart.com/default/20260327_170044_351025____1_baby-molly-20th-anniversary-vinyl-plush-blister-pack_details_pop-mart-us_____1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20260327_170057_802441____2_baby-molly-20th-anniversary-vinyl-plush-blister-pack_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_170057_890857____3_baby-molly-20th-anniversary-vinyl-plush-blister-pack_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20260327_170057_528425____1_baby-molly-20th-anniversary-vinyl-plush-blister-pack_details_pop-mart-us_____1200x1200.jpg"
      ],
      "upTime": 1775181600,
      "brand": "MOLLY",
@@ -11441,26 +11628,6 @@
       "https://prod-america-res.popmart.com/default/20250516_152505_995073____secret_baby-molly-baby-tabby-series-figures_blind-boxes_details_popmart-us_____1200x1200.jpg",
       "https://prod-america-res.popmart.com/default/20250516_152505_057314____single-box_baby-molly-baby-tabby-series-figures_blind-boxes_details_popmart-us_____1200x1200.jpg",
       "https://prod-america-res.popmart.com/default/20250516_152505_203489____whole-sets_baby-molly-baby-tabby-series-figures_blind-boxes_details_popmart-us_____1200x1200.jpg"
-     ],
-     "upTime": 1747965600,
-     "brand": "MOLLY",
-     "type": "normal"
-    },
-    {
-     "id": "2235",
-     "title": "Baby Molly Pocket Friends Series-Vinyl Plush Pendant Blind Box",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1789035315905_14d2aaf4a1bed7bc75953bd17d4ceac3.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20250516_153004_478497____2_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250516_153004_309856____3_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250516_153004_436255____4_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250516_153004_677807____5_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250516_153004_164892____6_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250516_153004_167321____scene_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250516_153004_927699____secret_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250516_153004_170099____single-box_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250516_153004_054240____whole-sets_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250516_153004_957792____1_baby-molly-pocket-friends-series-vinyl-plush-pendant-blind-box_plush-toys_details_popmart-us_____1200x1200.jpg"
      ],
      "upTime": 1747965600,
      "brand": "MOLLY",
@@ -11958,10 +12125,10 @@
     {
      "id": "8843",
      "title": "The Attic of Oddities Series Figures",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1791877828528_9b437f257e34e963ddd25d2a75d671d3.jpg",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792755363011_1952a01898073d1e561b9b4f2e42cbd7.jpg",
      "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283312_b2dee9b05b698aee989c2a413fea33ef.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_b5e1924bf24ca8a4301b90355b45736c.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_4203c9939d41fd4e5d38c319852e5a18.jpg"
      ],
@@ -13378,6 +13545,20 @@
      "type": "normal"
     },
     {
+     "id": "8890",
+     "title": "SKULLPANDA WHERE TIME DWELLS Series Figures",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1790155049307_0674bbae5131cdd432a2580e44d494d0.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1789965051927_e1799bb6ed3a40f4bde18a9e1dd1f0bf.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1789199992814_d661819ba46881a96bf64f3fdbfc39aa.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1789199992814_4d2fef7425be1ffc4e6e9734d15d1069.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1789199992814_fe770b26f58bd599f6785e3841f3440f.jpg"
+     ],
+     "upTime": 1789689600,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
      "id": "8888",
      "title": "SKULLPANDA WHERE TIME DWELLS Series Fridge Magnet",
      "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1789199049204_450a88c1697c01bb65d89c8c2f136014.jpg",
@@ -13404,34 +13585,6 @@
       "https://prod-global-biz.popmart.com/globalAdmin/1789200715921_14ccad0bf2cd4110cbc1855ed35a11ed.jpg"
      ],
      "upTime": 1789689600,
-     "brand": "SKULLPANDA",
-     "type": "normal"
-    },
-    {
-     "id": "9305",
-     "title": "SKULLPANDA × ROBERT WUN The Innocence 1/6 Action Figure",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792139701977_bff139fa05ac583f685a523ab3d110a0.png",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1792139708304_902cef58a738d2fe68b81e7a5dd90a52.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_0fc7ac742cb9764a1347445e34d0df62.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_d82ffbac4a79d5ab66acedc296b675bb.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_25acf92e72f693aec35b57a3e0e63361.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_5ec7af72132614d59d5b517028d7e595.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_718b87a7cb3b41bab6c21db1fd973ecb.jpg"
-     ],
-     "upTime": 1792713600,
-     "brand": "SKULLPANDA",
-     "type": "normal"
-    },
-    {
-     "id": "9304",
-     "title": "MEGA a SKULLPANDA 400% Robert Wun-Vestige d'astre",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792139527531_bff139fa05ac583f685a523ab3d110a0.png",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1792139534625_7eac8cc01788ac6a36727e0fea54388f.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1792139534626_0e796485fdcad9f7535b3518f5bd0020.jpg"
-     ],
-     "upTime": 1792713600,
      "brand": "SKULLPANDA",
      "type": "normal"
     },
@@ -13464,34 +13617,6 @@
      "type": "normal"
     },
     {
-     "id": "8890",
-     "title": "SKULLPANDA WHERE TIME DWELLS Series Figures",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1790155049307_0674bbae5131cdd432a2580e44d494d0.jpg",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1789965051927_e1799bb6ed3a40f4bde18a9e1dd1f0bf.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1789199992814_d661819ba46881a96bf64f3fdbfc39aa.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1789199992814_4d2fef7425be1ffc4e6e9734d15d1069.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1789199992814_fe770b26f58bd599f6785e3841f3440f.jpg"
-     ],
-     "upTime": 1789689600,
-     "brand": "SKULLPANDA",
-     "type": "normal"
-    },
-    {
-     "id": "3676",
-     "title": "SKULLPANDA You Found Me! Series Plush Doll Pendant",
-     "coverImg": "https://prod-america-res.popmart.com/default/20250905_171916_017094____single-box_skullpanda-you-found-me-series-plush-doll-pendant_plush-toys_details_pop-mart-us_____1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1785747021846_4152c212bab5a0d91f41e6e2c9157ef4.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1782384113316_8200874e7b4dd537157d721a6eeab474.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1782384113334_0cce427c1e63015f6f0980c71ed2dec7.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1782384113335_a289a755fb2b3b7dd6e30eff6c33753f.jpg"
-     ],
-     "upTime": 1757642400,
-     "brand": "SKULLPANDA",
-     "type": "normal"
-    },
-    {
      "id": "6201",
      "title": "SKULLPANDA Petals in Four Acts Series Figures",
      "coverImg": "https://prod-america-res.popmart.com/default/20260417_172902_948083____single-box_skullpanda-petals-in-four-acts-series-figures_blind-boxes_details_pop-mart-us_____1200x1200.jpg",
@@ -13502,20 +13627,6 @@
       "https://prod-global-biz.popmart.com/globalAdmin/1785727458749_1ee9bc47b1d5710768d3d07a4c1ab117.jpg"
      ],
      "upTime": 1776996000,
-     "brand": "SKULLPANDA",
-     "type": "normal"
-    },
-    {
-     "id": "1317",
-     "title": "SKULLPANDA The Sound Series Figures",
-     "coverImg": "https://prod-america-res.popmart.com/default/20240619_183128_550256____single-box_____800x800.png",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1785897202235_6512bd43d9caa6e02c990b0a82652dca.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785897288461_364fc6e08ed87cdb0d833a18ed6dec1f.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785897288461_5d8d0f4195dacd160a0f04d18081c8eb.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785897288461_541ae84cd92f368b872344a4eed0d577.jpg"
-     ],
-     "upTime": 1719540000,
      "brand": "SKULLPANDA",
      "type": "normal"
     },
@@ -13532,30 +13643,6 @@
       "https://prod-global-biz.popmart.com/globalAdmin/1789200439761_4de1ee32b2589b1fdaf4b66a52e035fb.jpg"
      ],
      "upTime": 1789689600,
-     "brand": "SKULLPANDA",
-     "type": "normal"
-    },
-    {
-     "id": "3943",
-     "title": "SKULLPANDA × Wednesday Plush（Classic Dress Version）",
-     "coverImg": "https://prod-america-res.popmart.com/default/20251013_145254_657758____1_skullpanda-wednesday-plush-classic-dress-version-_figurine_details_pop-mart-us_____1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20251013_145315_351041____2_skullpanda-wednesday-plush-classic-dress-version-_figurine_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20251013_145315_354530____3_skullpanda-wednesday-plush-classic-dress-version-_figurine_details_pop-mart-us_____1200x1200.jpg"
-     ],
-     "upTime": 1763136000,
-     "brand": "SKULLPANDA",
-     "type": "normal"
-    },
-    {
-     "id": "3778",
-     "title": "SKULLPANDA × Wednesday Plush (Nevermore Academy Uniform Version)",
-     "coverImg": "https://prod-america-res.popmart.com/default/20251017_173114_055439____1_skul-1_____1200x1200.JPG",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20251017_173124_516397____2_skul-1_____1200x1200.JPG",
-      "https://prod-america-res.popmart.com/default/20251017_173125_303090____3_skul-1_____1200x1200.JPG"
-     ],
-     "upTime": 1761271200,
      "brand": "SKULLPANDA",
      "type": "normal"
     },
@@ -13580,6 +13667,102 @@
      "type": "normal"
     },
     {
+     "id": "9305",
+     "title": "SKULLPANDA × ROBERT WUN The Innocence 1/6 Action Figure",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792139701977_bff139fa05ac583f685a523ab3d110a0.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708304_902cef58a738d2fe68b81e7a5dd90a52.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_0fc7ac742cb9764a1347445e34d0df62.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_d82ffbac4a79d5ab66acedc296b675bb.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_25acf92e72f693aec35b57a3e0e63361.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_5ec7af72132614d59d5b517028d7e595.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139708305_718b87a7cb3b41bab6c21db1fd973ecb.jpg"
+     ],
+     "upTime": 1792713600,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
+     "id": "9304",
+     "title": "MEGA a SKULLPANDA 400% Robert Wun-Vestige d'astre",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792139527531_bff139fa05ac583f685a523ab3d110a0.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139534625_7eac8cc01788ac6a36727e0fea54388f.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1792139534626_0e796485fdcad9f7535b3518f5bd0020.jpg"
+     ],
+     "upTime": 1792713600,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
+     "id": "8427",
+     "title": "MEGA α SKULLPANDA 1000% Éclat du Soleil",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1785490714906_2053ad4caf858f15814ba7df079d4991.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1785490704611_2053ad4caf858f15814ba7df079d4991.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785490704612_742fd39bf6f614cd899f9446ad7c040f.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785490704612_3066bf54672d72e7cdbe9701ffe68183.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785490704612_8710a3b3534ec2dafca0e154adbfae5b.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785490707390_27cf637fd9aacf3224f4d2178cdafb64.jpg"
+     ],
+     "upTime": 1786068000,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
+     "id": "3082",
+     "title": "MEGA α SKULLPANDA 400% Van Gogh Museum Sunflowers",
+     "coverImg": "https://prod-america-res.popmart.com/default/20250801_170437_189853____1_mega-skullpanda-400-van-gogh-museum-sunflowers_mega_details_pop-mart-us_____1200x1200.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20250801_170445_593253____scene_mega-skullpanda-400-van-gogh-museum-sunflowers_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250801_170445_286948____6_mega-skullpanda-400-van-gogh-museum-sunflowers_mega_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20250801_170445_680147____7_mega-skullpanda-400-van-gogh-museum-sunflowers_mega_details_pop-mart-us_____1200x1200.jpg"
+     ],
+     "upTime": 1755223200,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
+     "id": "3676",
+     "title": "SKULLPANDA You Found Me! Series Plush Doll Pendant",
+     "coverImg": "https://prod-america-res.popmart.com/default/20250905_171916_017094____single-box_skullpanda-you-found-me-series-plush-doll-pendant_plush-toys_details_pop-mart-us_____1200x1200.jpg",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1785747021846_4152c212bab5a0d91f41e6e2c9157ef4.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1782384113316_8200874e7b4dd537157d721a6eeab474.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1782384113334_0cce427c1e63015f6f0980c71ed2dec7.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1782384113335_a289a755fb2b3b7dd6e30eff6c33753f.jpg"
+     ],
+     "upTime": 1757642400,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
+     "id": "1317",
+     "title": "SKULLPANDA The Sound Series Figures",
+     "coverImg": "https://prod-america-res.popmart.com/default/20240619_183128_550256____single-box_____800x800.png",
+     "bannerImages": [
+      "https://prod-global-biz.popmart.com/globalAdmin/1785897202235_6512bd43d9caa6e02c990b0a82652dca.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785897288461_364fc6e08ed87cdb0d833a18ed6dec1f.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785897288461_5d8d0f4195dacd160a0f04d18081c8eb.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1785897288461_541ae84cd92f368b872344a4eed0d577.jpg"
+     ],
+     "upTime": 1719540000,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
+     "id": "3943",
+     "title": "SKULLPANDA × Wednesday Plush（Classic Dress Version）",
+     "coverImg": "https://prod-america-res.popmart.com/default/20251013_145254_657758____1_skullpanda-wednesday-plush-classic-dress-version-_figurine_details_pop-mart-us_____1200x1200.jpg",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20251013_145315_351041____2_skullpanda-wednesday-plush-classic-dress-version-_figurine_details_pop-mart-us_____1200x1200.jpg",
+      "https://prod-america-res.popmart.com/default/20251013_145315_354530____3_skullpanda-wednesday-plush-classic-dress-version-_figurine_details_pop-mart-us_____1200x1200.jpg"
+     ],
+     "upTime": 1763136000,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
      "id": "720",
      "title": "SKULLPANDA The Ink Plum Blossom Series Figures",
      "coverImg": "https://prod-america-res.popmart.com/default/20231030_173251_411644__1200x1200.jpg",
@@ -13591,6 +13774,18 @@
       "https://prod-global-biz.popmart.com/globalAdmin/1782383209838_864bb90b6123bd93a5b6d1bc2903ccdb.jpg"
      ],
      "upTime": 1698976800,
+     "brand": "SKULLPANDA",
+     "type": "normal"
+    },
+    {
+     "id": "3778",
+     "title": "SKULLPANDA × Wednesday Plush (Nevermore Academy Uniform Version)",
+     "coverImg": "https://prod-america-res.popmart.com/default/20251017_173114_055439____1_skul-1_____1200x1200.JPG",
+     "bannerImages": [
+      "https://prod-america-res.popmart.com/default/20251017_173124_516397____2_skul-1_____1200x1200.JPG",
+      "https://prod-america-res.popmart.com/default/20251017_173125_303090____3_skul-1_____1200x1200.JPG"
+     ],
+     "upTime": 1761271200,
      "brand": "SKULLPANDA",
      "type": "normal"
     },
@@ -13664,34 +13859,6 @@
      "type": "normal"
     },
     {
-     "id": "8427",
-     "title": "MEGA α SKULLPANDA 1000% Éclat du Soleil",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1785490714906_2053ad4caf858f15814ba7df079d4991.jpg",
-     "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1785490704611_2053ad4caf858f15814ba7df079d4991.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785490704612_742fd39bf6f614cd899f9446ad7c040f.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785490704612_3066bf54672d72e7cdbe9701ffe68183.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785490704612_8710a3b3534ec2dafca0e154adbfae5b.jpg",
-      "https://prod-global-biz.popmart.com/globalAdmin/1785490707390_27cf637fd9aacf3224f4d2178cdafb64.jpg"
-     ],
-     "upTime": 1786068000,
-     "brand": "SKULLPANDA",
-     "type": "normal"
-    },
-    {
-     "id": "3082",
-     "title": "MEGA α SKULLPANDA 400% Van Gogh Museum Sunflowers",
-     "coverImg": "https://prod-america-res.popmart.com/default/20250801_170437_189853____1_mega-skullpanda-400-van-gogh-museum-sunflowers_mega_details_pop-mart-us_____1200x1200.jpg",
-     "bannerImages": [
-      "https://prod-america-res.popmart.com/default/20250801_170445_593253____scene_mega-skullpanda-400-van-gogh-museum-sunflowers_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250801_170445_286948____6_mega-skullpanda-400-van-gogh-museum-sunflowers_mega_details_pop-mart-us_____1200x1200.jpg",
-      "https://prod-america-res.popmart.com/default/20250801_170445_680147____7_mega-skullpanda-400-van-gogh-museum-sunflowers_mega_details_pop-mart-us_____1200x1200.jpg"
-     ],
-     "upTime": 1755223200,
-     "brand": "SKULLPANDA",
-     "type": "normal"
-    },
-    {
      "id": "3317",
      "title": "SKULLPANDA Lazy Panda Plush Doll Pendant",
      "coverImg": "https://prod-america-res.popmart.com/default/20250815_180113_899235____1_skullpanda-lazy-panda-plush-doll-pendant_plush-toys-_details_pop-mart-us_____1200x1200.jpg",
@@ -13711,10 +13878,10 @@
     {
      "id": "8843",
      "title": "The Attic of Oddities Series Figures",
-     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1791877828528_9b437f257e34e963ddd25d2a75d671d3.jpg",
+     "coverImg": "https://prod-global-biz.popmart.com/globalAdmin/1792755363011_1952a01898073d1e561b9b4f2e42cbd7.jpg",
      "bannerImages": [
-      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283312_b2dee9b05b698aee989c2a413fea33ef.jpg",
+      "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_101480d2f56b856f68fa152bfb13d1fa.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_b5e1924bf24ca8a4301b90355b45736c.jpg",
       "https://prod-global-biz.popmart.com/globalAdmin/1788508283313_4203c9939d41fd4e5d38c319852e5a18.jpg"
      ],
@@ -44752,6 +44919,57 @@
    "designer": "",
    "url": "https://www.popmart.com/us/products/8996"
   },
+  "9054": {
+   "id": "9054",
+   "title": "1001MOONS The Moonlight Gathering Guide Series Plush Doll Pendant",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: Height: 11.5-13.5cm/4.53-5.31inches; Width: 10-12cm/3.94-4.72inche\nMATERIAL: Polyester / PVC / ABS/ Zinc Alloy; Stuffing: Polyester Fibers\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792741766114_fea0d0f1305745a63f197fb9512893f4.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792741534928_5b2806ad3d84acc97a8360ad93dd7382.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792741534928_af94f73bec3cd33aeb5f7d75415388b4.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792741534929_5daa33fd592ad9ef805d3d8803fb64da.jpg"
+   ],
+   "toys": [
+    {
+     "name": "The Drowsy Bear",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792741713988_74a55f049159406bccbe1f4152da1523.jpg"
+    },
+    {
+     "name": "The Moonlit Fox",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792741716619_33893f9411bfe3de925073682fd33959.jpg"
+    },
+    {
+     "name": "The Tinkling Bell",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792741719644_8b160605e00974098e9f9b32239458d8.jpg"
+    },
+    {
+     "name": "My First Snowman",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792741724195_fea0d0f1305745a63f197fb9512893f4.jpg"
+    },
+    {
+     "name": "The Wandering Pine",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792741727455_58ed999bd6e22eff964aa7a6d92a8306.jpg"
+    },
+    {
+     "name": "The Only Rose",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792741731266_453081c7a38fd1d7259f13a0a7afcf69.jpg"
+    },
+    {
+     "name": "Secret",
+     "type": 2,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792741739236_c91b22b5d2c40cc6d1b97ab78f524263.jpg"
+    }
+   ],
+   "brand": "1001MOONS",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9054"
+  },
   "9057": {
    "id": "9057",
    "title": "POP BEAN Twinkle Twinkle Live The Ordinary Series",
@@ -45494,6 +45712,18 @@
    "designer": "",
    "url": "https://www.popmart.com/us/products/9169"
   },
+  "9172": {
+   "id": "9172",
+   "title": "THE MONSTERS 10th Aniversary Exhibition Limited Edition - Marker Set",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 15, 2026 at 5:00 PM (PST)\nSIZE: \nMATERIAL: \nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1791776318916_4609d0867b8a7c7b8159e12c7990d135.jpg"
+   ],
+   "toys": [],
+   "brand": "THE MONSTERS",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9172"
+  },
   "9173": {
    "id": "9173",
    "title": "LABUBU Freckles Figure",
@@ -45692,6 +45922,20 @@
    "designer": "",
    "url": "https://www.popmart.com/us/products/9302"
   },
+  "9303": {
+   "id": "9303",
+   "title": "MEGA ROYAL MOLLY 400% Lustre of Liuli·Moonlight",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 22, 2026 at 11:00 PM (PST)\nSIZE: Height:41.6cm/16.38inches\nMATERIAL: Liuli Glass\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792726315280_a98dbfb0754927eb82bc4928afdb4c66.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792726315280_994f147876c87d00dd0c3235e651d181.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792726315279_95d541551f28a0f4f98663f15c018952.jpg"
+   ],
+   "toys": [],
+   "brand": "MOLLY",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9303"
+  },
   "9304": {
    "id": "9304",
    "title": "MEGA a SKULLPANDA 400% Robert Wun-Vestige d'astre",
@@ -45753,6 +45997,475 @@
    "brand": "THE MONSTERS",
    "designer": "",
    "url": "https://www.popmart.com/us/products/9357"
+  },
+  "9405": {
+   "id": "9405",
+   "title": "Angry Molly [PLAY] Disney Princess Series Plush Pendant",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: Height: 14.5cm/5.71inches (Excluding the ring and strap)\nMATERIAL: Polyester/Zinc Alloy; Stuffing: Polyester Fibers\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792742237287_a9e3ce38d919020f3ac119bf72183795.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792742245823_dda617079bdf198cdbd98d890d31fb66.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792742245823_bdf8a4a6e521161ab0ef9ad67b1c4c6c.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792742245823_c7cfc0aaa189d9e9eaf73b437b167840.jpg"
+   ],
+   "toys": [
+    {
+     "name": "Snow White",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742401798_a9e3ce38d919020f3ac119bf72183795.jpg"
+    },
+    {
+     "name": "Rapunzel",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742405295_da5d2501b8f4d5d814264dea969b3cbe.jpg"
+    },
+    {
+     "name": "Aurora",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742410571_82ccdd5f6c83e36d04c6e927aef92e36.jpg"
+    },
+    {
+     "name": "Belle",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742414550_ee4d92e8bf7d0a8d560c154fed392a61.jpg"
+    },
+    {
+     "name": "Mulan",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742417669_6b6e3ad6a6b59f18df1206d4a9956136.jpg"
+    },
+    {
+     "name": "Little Ariel",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742421008_c08ced445267f3470779cfe0f4856d46.jpg"
+    },
+    {
+     "name": "Cinderella",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742435421_105032f924c6485d9632aab6e6b6c869.jpg"
+    },
+    {
+     "name": "Cinderella - Special Edition",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742438491_4438cf134f6a6b9707c90281eeefe85b.jpg"
+    },
+    {
+     "name": "Snow White - Special Edition(secret)",
+     "type": 2,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742442221_840aca9e2abab0735980fa9ba02e77a7.jpg"
+    }
+   ],
+   "brand": "MOLLY",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9405"
+  },
+  "9406": {
+   "id": "9406",
+   "title": "BABY MOLLY Disney Princess Series MINI Action Figure",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: Figure Height: Approx. 10-11cm/3.94-4.33inches (without any accessories)\nMATERIAL: PVC/ABS/POK/Polyester/Metal/Magnet\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792742712176_e275bb5bfa29500db8630a7f5a1e9828.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792742712176_17660d019c73eb6285047454387dd4a1.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792742712177_1314b7bf7a89427237e11f32a437b9c0.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792742712177_a0b5ed4ca88c2cdbba8868897f6361c4.jpg"
+   ],
+   "toys": [
+    {
+     "name": "BABY MOLLY as Cinderella",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742838833_95e9215d939a536113b97b48903a1f3c.jpg"
+    },
+    {
+     "name": "BABY MOLLY as Ariel",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742842355_9a3d786579dd1061e8bcb475c32e5b26.jpg"
+    },
+    {
+     "name": "BABY MOLLY as Snow White",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742846225_e275bb5bfa29500db8630a7f5a1e9828.jpg"
+    },
+    {
+     "name": "BABY MOLLY as Rapunzel",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742853629_344eb3cd76827881d1220b5daaeee024.jpg"
+    },
+    {
+     "name": "BABY MOLLY as Belle",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742857800_cea55e1253b9bd3a50acc094ccfaa9f3.jpg"
+    },
+    {
+     "name": "BABY MOLLY as Merida",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742861590_728979542bcee91ed620f1368b2e4a64.jpg"
+    },
+    {
+     "name": "BABY MOLLY as Mulan",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742866689_c6c242160456b7f834f10166067e8927.jpg"
+    },
+    {
+     "name": "BABY MOLLY as Moana",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742871169_957dee07701f23455396620fa406de82.jpg"
+    },
+    {
+     "name": "Baby Molly as Aurora (secret)",
+     "type": 2,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792742875675_d6d72a418ebac994e9f9b917b205c83f.jpg"
+    }
+   ],
+   "brand": "MOLLY",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9406"
+  },
+  "9407": {
+   "id": "9407",
+   "title": "MEGA ROYAL MOLLY 100% Lustre of Liuli · Golden Hour",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: Height: 10.5cm/4.13inches\nMATERIAL: Liuli Glass\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743083555_4433e18c7f20f9519979843bd3b3b66e.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743083555_a0ceec497a60d4e6984c74657ea91244.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743083555_3882e39fbc754bc9db32fd8dc8db9cf8.jpg"
+   ],
+   "toys": [],
+   "brand": "MOLLY",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9407"
+  },
+  "9408": {
+   "id": "9408",
+   "title": "MOLLY Rapunzel 1/8 Action Figure",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: Figure Height: Approx. 20cm/7.87inches (without any accessories)\nMATERIAL: PVC / ABS / POK / Metal/ Polyester / Nylon\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_3bf070093da63d7abc27b7f313ea1fef.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_180bac1966610fcb7d82cd0a8c31b7ce.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_e60fec45e2304e20092e8b456fa70ed2.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_4e635a425f6990c243b4674098ff98c4.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_bab4c2f620f0c5afd883653d42288447.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_c44abd3c912924d1a18ebafdff1b3ac2.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792743297278_34eac252d5bb330959bfc715340d5ca2.jpg"
+   ],
+   "toys": [],
+   "brand": "MOLLY",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9408"
+  },
+  "9409": {
+   "id": "9409",
+   "title": "Peach Riot Sugar Mode Series - Short Lanyard Charm",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: Beaded Chain Length: About 30cm/11.81inches (Excluding the metal hanging loop and the alloy plate)\nMATERIAL: Zinc Alloy/Acrylic/Resin/TPU/Stainless Steel\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_b0c9d9ab01fe30fbab67c368903890ed.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_82c780a84340c5d5e1a37789e93c3877.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_d9c7e63c183be16460ad4f2be5339a5a.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_564b4f368e5abf5918ec9ea0874fa426.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_34f290b772a489e18bf8f7b4ac85f12d.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_f2b68fedd83f91afc78911a0b25177d4.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744113169_78e9649e7d77272408c20958b157b1ef.jpg"
+   ],
+   "toys": [
+    {
+     "name": "Kiwi Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745067834_43f7f6947962cba22ca3c135cd8a9bae.png"
+    },
+    {
+     "name": "Guava Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745102574_e45012e0ade70cd6c26afa608f328a65.png"
+    },
+    {
+     "name": "Cherry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745110225_8a52d2b946bd2bb2df2295c9b8b10b12.png"
+    },
+    {
+     "name": "Orange Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745094464_8da1c36e7546f57c833d63663691bad5.png"
+    },
+    {
+     "name": "Banana Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792744815511_ed74ec94419265d2f8b84784b53833ac.png"
+    },
+    {
+     "name": "Blueberry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745077002_1ea79045996e0a6704350affb83f6edf.png"
+    },
+    {
+     "name": "Avant Peach（Secret）",
+     "type": 2,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745086188_b9ddf0a89cd86d11f005753687ba75b4.png"
+    }
+   ],
+   "brand": "Peach Riot",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9409"
+  },
+  "9410": {
+   "id": "9410",
+   "title": "Peach Riot Sugar Mode Series - Earphone Case",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: 12*11*8.4cm/4.72*4.33*3.31inches (Excluding the charm and metal hardware)\nMATERIAL: Silicone /Polyester/Zinc Alloy/Acrylic\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_8f77a461f039107f9d05084902b551ba.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_d3e322bb1966fb26737b28f1a58d4461.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_b49996a106d9714d2c3e11a1c55f35ec.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_66d2f531d3f6b4a00dea49b2158d4214.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744409530_ee2e06a5242fd47b84e573fa102784ad.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744409531_8871c9af892e8d8e79530714d278dff6.jpg"
+   ],
+   "toys": [
+    {
+     "name": "Kiwi Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792744488860_8f77a461f039107f9d05084902b551ba.jpg"
+    },
+    {
+     "name": "Guava Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792744494394_51495cbab035b987c2e9b3a9fe0ba288.jpg"
+    },
+    {
+     "name": "Blueberry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792744497553_f282ea32fcdf6234900a6a8504bbc90f.jpg"
+    },
+    {
+     "name": "Avant Peach(secert)",
+     "type": 2,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792744500572_f282ea32fcdf6234900a6a8504bbc90f.jpg"
+    }
+   ],
+   "brand": "Peach Riot",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9410"
+  },
+  "9411": {
+   "id": "9411",
+   "title": "Peach Riot Sugar Mode Series - Modular Bracelet",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: Overall Length: About 22cm/8.66inches (15 modules per style)\nMATERIAL: Zinc Alloy/PVC\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_78302fc78f4747a2d00cb99867838416.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_5991a70e5232253b5abda2e4920cb2a5.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_84ec87cf448820176a9bd9ff0f41fde9.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_144826131d558d7821cb18bebb7bb3b7.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_34f290b772a489e18bf8f7b4ac85f12d.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792744740980_9d3ad873fe2d23a4be3869735a11aadc.jpg"
+   ],
+   "toys": [
+    {
+     "name": "Kiwi Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745302095_43f7f6947962cba22ca3c135cd8a9bae.png"
+    },
+    {
+     "name": "Guava Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745292907_e45012e0ade70cd6c26afa608f328a65.png"
+    },
+    {
+     "name": "Cherry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745310650_8a52d2b946bd2bb2df2295c9b8b10b12.png"
+    }
+   ],
+   "brand": "Peach Riot",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9411"
+  },
+  "9412": {
+   "id": "9412",
+   "title": "Peach Riot Sugar Mode Series - Card Holder",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: 12*8.9cm/4.72*3.5inches\nMATERIAL: Polyester/PVC/EVA/Zinc Alloy\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745163665_65381545103ba4dcd3c802863e51e3c9.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745163665_9abcb3a7d6834dbac2d59d7d1a49425f.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745163665_792e0250599dedc065ab88a88d79cdef.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_8d6de4904c7e47587ae56e46526b3f6b.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_caaa13517afaa310a2c122de42d716d5.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_327c4bae809e384baa47989138bc6f18.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_0156ebd85425c6e0f0970d9561533d52.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745163666_15f3a55b3600f68e2437699d01fa270e.jpg"
+   ],
+   "toys": [
+    {
+     "name": "Blueberry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745641401_1ea79045996e0a6704350affb83f6edf.png"
+    },
+    {
+     "name": "Guava Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745677641_e45012e0ade70cd6c26afa608f328a65.png"
+    },
+    {
+     "name": "Orange Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745658331_8da1c36e7546f57c833d63663691bad5.png"
+    },
+    {
+     "name": "Kiwi Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745686288_43f7f6947962cba22ca3c135cd8a9bae.png"
+    },
+    {
+     "name": "Cherry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745696034_8a52d2b946bd2bb2df2295c9b8b10b12.png"
+    },
+    {
+     "name": "Banana Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745649658_ed74ec94419265d2f8b84784b53833ac.png"
+    },
+    {
+     "name": "Avant Peach（Secret）",
+     "type": 2,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745668233_b9ddf0a89cd86d11f005753687ba75b4.png"
+    }
+   ],
+   "brand": "Peach Riot",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9412"
+  },
+  "9413": {
+   "id": "9413",
+   "title": "Peach Riot Sugar Mode Series Figures",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: Height: 12.2-14.1cm/4.8-5.55inches\nMATERIAL: PVC/ABS\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_e4923170e78f3ebb99bd7dfa27d82e2b.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_0e05887b1e9ce27ab961804f2bdc2c48.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_830076624682255b027d573942ea8657.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_53f00201b478d3986f91b0c5b99386ef.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_34adecdddc1963c253cb8ea024b1f599.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_bc2df3615875b44a7c5c85a03e3dd775.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792745501045_1f9a5ace0d02aca416df32122f234bae.jpg"
+   ],
+   "toys": [
+    {
+     "name": "Banana Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745905002_d8f4c3bab95756f5c608fa3c2582a788.jpg"
+    },
+    {
+     "name": "Strawberry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745909668_e4923170e78f3ebb99bd7dfa27d82e2b.jpg"
+    },
+    {
+     "name": "Blueberry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745930173_63871f387f86951a24d3903af27bd025.jpg"
+    },
+    {
+     "name": "Guava Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745938761_b6246d59edc92d44b3f8a75c13aacf84.jpg"
+    },
+    {
+     "name": "Kiwi Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745942945_838436d37d7658305e1c89e3cdfd52a1.jpg"
+    },
+    {
+     "name": "Apple Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745949024_469e1304a9821b5f0f067a7b1f280f7d.jpg"
+    },
+    {
+     "name": "Sour Watermelon Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745967100_6273213aef5b96f068c6521ab21cbcae.jpg"
+    },
+    {
+     "name": "Grape Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745973680_a5b1ce462260785405f1d1f6cb0122b1.jpg"
+    },
+    {
+     "name": "Cherry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745978603_219d216acd8e41253c4ee0d8b60115b2.jpg"
+    },
+    {
+     "name": "Blackberry Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792745989082_cbe28980234449923d41292d8041fe64.jpg"
+    },
+    {
+     "name": "Orange Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792746005217_fcf3373001e21b155a477a43d1e4e77a.jpg"
+    },
+    {
+     "name": "Coconut Mode",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792746010197_3f30ccce29ff162a39facde9197014d5.jpg"
+    },
+    {
+     "name": "Peach Mode(secret)",
+     "type": 2,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792746018721_f5cdafd1dd8d3331812d44ab52ab49ec.jpg"
+    }
+   ],
+   "brand": "Peach Riot",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9413"
+  },
+  "9414": {
+   "id": "9414",
+   "title": "Peach Riot × KPop Demon Hunters Series Plush Doll Pendant",
+   "desc": "Brand: POP MART\nOnline Release (Official Website): October 29, 2026 at 5:00 PM (PST)\nSIZE: Height: About 16.5cm /6.5inches\nMATERIAL: Polyester/Zinc Alloy /PVC/ABS/PU; Stuffing: Polyester Fibers\nNot suitable for persons under 15.\n*Due to differences in measurement methods, the actual measurements may vary within a normal range of 0.19- 0.39 inches. Actual product size and color may appear different due to lighting, display screen specifications, photography style and other factors. Display picture and size are for reference only.",
+   "banners": [
+    "https://prod-global-biz.popmart.com/globalAdmin/1792750931911_45c48cce2e2d7fbdea1afc51c7c6ad26.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792750931910_c81e728d9d4c2f636f067f89cc14862c.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792750931911_6512bd43d9caa6e02c990b0a82652dca.jpg",
+    "https://prod-global-biz.popmart.com/globalAdmin/1792750931911_c20ad4d76fe97759aa27a0c99bff6710.jpg"
+   ],
+   "toys": [
+    {
+     "name": "Peach Riot Gigi How It's Done",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792750982306_c81e728d9d4c2f636f067f89cc14862c.jpg"
+    },
+    {
+     "name": "Peach Riot Frankie How It's Done",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792750986153_eccbc87e4b5ce2fe28308fd9f2a7baf3.jpg"
+    },
+    {
+     "name": "Peach Riot Poppy How It's Done",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792750990355_a87ff679a2f3e71d9181a67b7542122c.jpg"
+    },
+    {
+     "name": "Peach Riot Gigi What It Sounds Like",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792750996176_8f14e45fceea167a5a36dedd4bea2543.jpg"
+    },
+    {
+     "name": "Peach Riot Frankie What It Sounds Like",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792751002841_1679091c5a880faf6fb5e6087eb1b2dc.jpg"
+    },
+    {
+     "name": "Peach Riot Poppy What It Sounds Like",
+     "type": 1,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792751010167_c9f0f895fb98ab9159f51fd0297e236d.jpg"
+    },
+    {
+     "name": "Peach Riot Gigi Derpy（Secret）",
+     "type": 2,
+     "url": "https://prod-global-biz.popmart.com/globalAdmin/1792751014551_d3d9446802a44259755d38e6d163e820.jpg"
+    }
+   ],
+   "brand": "Peach Riot",
+   "designer": "",
+   "url": "https://www.popmart.com/us/products/9414"
   },
   "9421": {
    "id": "9421",
