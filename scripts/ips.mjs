@@ -28,6 +28,8 @@ export const IP_LIST = [
   ['sweet-bean', 'sweet-bean', 'rising'],
   ['1001moons', '1001moons', 'rising'],
   ['supertutu', 'supertutu', 'rising'],
+  ['ribodiary', 'ribodiary', 'rising'],
+  ['keya', 'keya', 'rising'],
 ];
 
 /** 每个 IP 首次收录的系列上限；已收录的系列之后会一直保留 */

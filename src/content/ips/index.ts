@@ -12,6 +12,8 @@ import { peachRiot } from "./peach-riot";
 import { kubo } from "./kubo";
 import { nyota } from "./nyota";
 import { chaka, zsiga, polar, pinoJelly, inosoul, tinyTiny, duckoo, merodi, sweetBean, moons1001, supertutu } from "./rising";
+import { ribodiary } from "./ribodiary";
+import { keya } from "./keya";
 
 /**
  * 手写故事的 IP，展示顺序即数组顺序。官网新出现的 IP 会先被自动收录（见 ./auto.ts），
@@ -41,4 +43,6 @@ export const IPS: IPContent[] = [
   sweetBean,
   moons1001,
   supertutu,
+  ribodiary,
+  keya,
 ];

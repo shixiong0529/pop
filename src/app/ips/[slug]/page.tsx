@@ -22,12 +22,16 @@ import {
   getIPShowcase,
   getIPStats,
   getIPs,
+  getProduct,
   getSeriesById,
   getSeriesOfIP,
 } from "@/lib/data";
 import { seriesDate, seriesName } from "@/lib/naming";
 import { themeVars } from "@/lib/theme";
 import { SITE } from "@/lib/site";
+
+/** 角色卡片在大屏上默认 5 列；6 个角色时排成一行，避免最后一行只剩一张 */
+const CHARACTER_COLS: Record<number, string> = { 6: "lg:grid-cols-6" };
 
 export function generateStaticParams() {
   return getIPs().map((ip) => ({ slug: ip.slug }));
@@ -98,7 +102,11 @@ async function IPExhibition({ params }: { params: PageProps<"/ips/[slug]">["para
   }));
   const timeline = [...story, ...releases].sort((a, b) => a.sort - b.sort);
 
-  const characters = (ip.characters ?? []).map((c) => ({ ...c, series: c.seriesId ? getSeriesById(c.seriesId) : undefined }));
+  const characters = (ip.characters ?? []).map((c) => ({
+    ...c,
+    series: c.seriesId ? getSeriesById(c.seriesId) : undefined,
+    product: c.productSlug ? getProduct(c.productSlug) : undefined,
+  }));
 
   const chapters: ChapterInfo[] = [
     { id: "origin", no: "01", title: "起源" },
@@ -219,14 +227,14 @@ async function IPExhibition({ params }: { params: PageProps<"/ips/[slug]">["para
       {/* 04 角色 */}
       {characters.length > 0 && (
         <Chapter id="characters" no={no.characters} title="角色" en="Characters" wide>
-          <Stagger className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
+          <Stagger className={`grid grid-cols-2 gap-5 md:grid-cols-3 ${CHARACTER_COLS[characters.length] ?? "lg:grid-cols-5"}`}>
             {characters.map((c) => (
               <StaggerItem key={c.name}>
                 <TiltCard className="h-full" max={7}>
                   <div className="flex h-full flex-col overflow-hidden rounded-[1.6rem] bg-[var(--t-surface)] ring-1 ring-current/5">
                     <div className="relative aspect-[4/5] overflow-hidden" style={{ background: "var(--t-glow-1)" }}>
-                      {c.series ? (
-                        <Img asset={c.series.cover} alt={c.name} fill sizes="(min-width:1024px) 18vw, 45vw" />
+                      {c.product || c.series ? (
+                        <Img asset={c.product?.image ?? c.series!.cover} alt={c.name} fill sizes="(min-width:1024px) 18vw, 45vw" />
                       ) : (
                         <span className="absolute inset-0 grid place-items-center font-display text-6xl font-black opacity-30">
                           {c.name.slice(0, 1)}
@@ -236,8 +244,11 @@ async function IPExhibition({ params }: { params: PageProps<"/ips/[slug]">["para
                     <div className="flex-1 p-5">
                       <p className="font-display text-xl font-black tracking-tight">{c.name}</p>
                       <p className="mt-2 text-[13.5px] leading-6 opacity-70">{c.desc}</p>
-                      {c.series && (
-                        <Link href={`/series/${c.series.slug}`} className="mt-3 inline-block text-xs font-semibold underline underline-offset-4 opacity-70 hover:opacity-100">
+                      {(c.product || c.series) && (
+                        <Link
+                          href={c.product ? `/products/${c.product.slug}` : `/series/${c.series!.slug}`}
+                          className="mt-3 inline-block text-xs font-semibold underline underline-offset-4 opacity-70 hover:opacity-100"
+                        >
                           查看手办
                         </Link>
                       )}

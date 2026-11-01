@@ -44,6 +44,8 @@ export interface Character {
   desc: string;
   /** 官网商品 id（对应本站系列 id），用于取角色图 */
   seriesId?: number;
+  /** 本站单品 slug：系列里每个角色各有一款单品时，用它的图片和链接（优先于 seriesId） */
+  productSlug?: string;
 }
 
 export interface Milestone {

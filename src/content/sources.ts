@@ -115,4 +115,46 @@ export const SRC = {
     url: "https://www.tatlerasia.com/lifestyle/entertainment/pop-mart-popular-collectible-toys-zh-hant",
     kind: "media",
   },
+  // RiboDiary
+  slistRibo: {
+    title: "Single List（韩国）· 泡泡玛特推出森林伙伴新 IP RiboDiary（2026.10.30）",
+    url: "https://www.slist.kr/news/articleView.html?idxno=777750",
+    kind: "media",
+  },
+  weiboRibo: {
+    title: "泡泡玛特官方微博 · RiboDiary 森林欢聚日门店活动（2026.10.31，新浪转载）",
+    url: "https://www.sina.cn/weibo/detail/5360096273765090.html",
+    kind: "official",
+  },
+  huxiuRibo: {
+    title: "虎嗅 ·「黄牛退场」不是泡泡玛特最大的问题（剁椒Spicy，2026.10.31）",
+    url: "https://www.huxiu.com/article/4901925.html",
+    kind: "media",
+  },
+  // KeyA
+  toyChronicleKeyA: {
+    title: "The Toy Chronicle · POP MART Presents KeyA A Lucid Dream Blind Box Series（2026.03.18）",
+    url: "https://www.thetoychronicle.com/news/pop-mart-presents-keya-a-lucid-dream-blind-box-series/",
+    kind: "media",
+  },
+  spankyKeyA: {
+    title: "SpankyStokes · Mechanical Dreams: Chen Yanran Reveals Her Futuristic “KeyA”（2026.03.17）",
+    url: "https://www.spankystokes.com/2026/03/mechanical-dreams-chen-yanran-reveals.html",
+    kind: "media",
+  },
+  thepaperKeyA: {
+    title: "澎湃号 · 泡泡玛特撞上“路人盘”（市象，2026.03.18）",
+    url: "https://m.thepaper.cn/newsDetail_forward_32782614",
+    kind: "media",
+  },
+  jiemianKeyA: {
+    title: "界面新闻 · 力推新IP，泡泡玛特也吃劲儿（2026.03.23）",
+    url: "https://www.jiemian.com/article/14148468.html",
+    kind: "media",
+  },
+  ptsSgKeyA: {
+    title: "Macau Business · KeyA to Debut New Collectibles at POP TOY SHOW Singapore 2026（新闻稿，2026.08.21）",
+    url: "https://macaubusiness.com/keya-to-debut-new-collectibles-and-meet-fans-at-pop-toy-show-singapore-2026/",
+    kind: "media",
+  },
 } satisfies Record<string, Source | ((...args: string[]) => Source)>;
